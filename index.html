@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WikiSchool - Temukan Sekolah Impianmu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom gradient for accents */
+      .bg-gradient-indigo-pink {
+        background: linear-gradient(to right, #6366f1, #ec4899);
+      }
+      .text-gradient-indigo-pink {
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(to right, #6366f1, #ec4899);
+      }
+      /* Custom scrollbar for better UI on supported browsers */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1; /* Gray 300 */
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8; /* Gray 400 */
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased text-gray-800">
+    <nav
+      class="bg-white border-gray-200 dark:bg-gray-900 border-gray-200 shadow-sm sticky top-0 z-50"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="#"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+          onclick="showHome()"
+        >
+          <div
+            class="w-8 h-8 bg-gradient-to-br from-indigo-500 to-pink-500 rounded-lg flex items-center justify-center"
+          >
+            <i class="fas fa-graduation-cap text-white text-sm"></i>
+          </div>
+          <span
+            class="self-center text-2xl font-bold whitespace-nowrap bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent"
+          >
+            WikiSchool
+          </span>
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-white bg-gradient-indigo-pink rounded md:bg-transparent md:text-white-700 md:p-1 dark:text-white md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="sekolah.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-1 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Daftar Sekolah</a
+              >
+            </li>
+            <li>
+              <a
+                href="tim-kami.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-1 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Tim Kami</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="relative overflow-hidden bg-white dark:bg-gray-800">
+      <div
+        class="max-w-screen-xl mx-auto px-4 py-16 sm:py-24 lg:py-32 flex flex-col-reverse md:flex-row items-center justify-between gap-12"
+      >
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white mb-4"
+          >
+            Temukan Sekolah Impianmu dengan
+            <span class="text-gradient-indigo-pink">WikiSchool</span>
+          </h1>
+          <p
+            class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0"
+          >
+            WikiSchool adalah platform lengkap untuk calon siswa SMA/SMK dalam
+            mencari informasi akurat dan terkini tentang sekolah pilihanmu.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-4"
+          >
+            <a
+              href="sekolah.html"
+              class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-gradient-indigo-pink hover:opacity-90 transition-all duration-300 ease-in-out"
+            >
+              Mulai Jelajahi Sekolah
+              <svg
+                class="w-4 h-4 ml-2 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+          <div class="relative">
+            <div class="relative z-10">
+              <img
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Students"
+                class="rounded-2xl shadow-2xl w-full h-96 object-cover"
+              />
+            </div>
+            <div
+              class="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-indigo-500 to-pink-500 rounded-2xl opacity-20"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div class="text-center space-y-4 mb-16">
+          <h2 class="text-4xl font-bold text-gray-900">
+            Mengapa Memilih WikiSchool?
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Dapatkan informasi lengkap dan akurat tentang sekolah pilihan Anda.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="group text-center p-8 rounded-2xl bg-gradient-to-br from-indigo-100 to-white border border-indigo-100 hover:shadow-lg transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-indigo-200 rounded-2xl flex items-center justify-center mx-auto mb-6 transform transition-transform duration-300 group-hover:scale-125"
+            >
+              <i class="fas fa-school text-indigo-700 text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+              Informasi Lengkap
+            </h3>
+            <p class="text-gray-600">
+              Data sekolah yang komprehensif meliputi fasilitas, program studi,
+              dan prestasi sekolah.
+            </p>
+          </div>
+          <div
+            class="group text-center p-8 rounded-2xl bg-gradient-to-br from-pink-100 to-white border border-pink-100 hover:shadow-lg transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-pink-200 rounded-2xl flex items-center justify-center mx-auto mb-6 transform transition-transform duration-300 group-hover:scale-125"
+            >
+              <i class="fas fa-search text-pink-700 text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+              Pencarian Mudah
+            </h3>
+            <p class="text-gray-600">
+              Filter berdasarkan jenis sekolah dan lokasi untuk menemukan
+              sekolah yang sesuai.
+            </p>
+          </div>
+          <div
+            class="group text-center p-8 rounded-2xl bg-gradient-to-br from-green-100 to-white border border-indigo-100 hover:shadow-lg transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-green-200 rounded-2xl flex items-center justify-center mx-auto mb-6 transform transition-transform duration-300 group-hover:scale-125"
+            >
+              <i class="fas fa-map-marker-alt text-green-700 text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+              Lokasi Akurat
+            </h3>
+            <p class="text-gray-600">
+              Peta interaktif dan panduan rute untuk memudahkan kunjungan ke
+              sekolah.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="col-span-2">
+            <div class="flex items-center space-x-3 mb-4">
+              <div
+                class="w-8 h-8 bg-gradient-to-br from-indigo-500 to-pink-500 rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-graduation-cap text-white text-sm"></i>
+              </div>
+              <span
+                class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent"
+                >WikiSchool</span
+              >
+            </div>
+            <p class="text-gray-400 mb-4">
+              Platform terpercaya untuk mencari informasi lengkap tentang
+              sekolah menengah di Indonesia.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Menu</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  onclick="showHome()"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  onclick="showSchools()"
+                  >Daftar Sekolah</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  onclick="showTeam()"
+                  >Tim Kami</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li><i class="fas fa-envelope mr-2"></i>info@wikischool.id</li>
+              <li><i class="fas fa-phone mr-2"></i>+62 21 1234 5678</li>
+              <li>
+                <i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2024 WikiSchool. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>

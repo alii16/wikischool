@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Sekolah - WikiSchool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+      .bg-gradient-indigo-pink {
+        background: linear-gradient(to right, #6366f1, #ec4899);
+      }
+      .text-gradient-indigo-pink {
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(to right, #6366f1, #ec4899);
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased text-gray-800 bg-gray-50 dark:bg-gray-900">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-gradient-indigo-pink"
+            >WikiSchool</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="sekolah.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Daftar Sekolah</a
+              >
+            </li>
+            <li>
+              <a
+                href="tim-kami.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Tim Kami</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-screen-xl mx-auto px-4 py-8 md:py-12">
+      <a
+        href="sekolah.html"
+        class="inline-flex items-center px-4 py-2 text-indigo-600 hover:text-indigo-800 mb-8 transition-colors"
+      >
+        <i class="fas fa-arrow-left mr-2"></i>
+        Kembali ke Daftar Sekolah
+      </a>
+      <div
+        id="school-detail-container"
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6 md:p-8"
+      >
+        <h2
+          id="school-name"
+          class="text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-white mb-4"
+        ></h2>
+        <p
+          id="school-type"
+          class="text-sm font-semibold mb-6 px-2 py-1 rounded-full self-start"
+        ></p>
+
+        <div
+          id="default-carousel"
+          class="relative w-full mb-8"
+          data-carousel="static"
+        >
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                id="school-image"
+                src=""
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover h-full"
+                alt="School Image"
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://via.placeholder.com/1200x600/CCD1D7/5B798F?text=Fasilitas+Sekolah"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover h-full"
+                alt="School Facility"
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://via.placeholder.com/1200x600/C5D8EE/428CD7?text=Lingkungan+Sekolah"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover h-full"
+                alt="School Environment"
+              />
+            </div>
+          </div>
+          <div
+            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+          </div>
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+          <div>
+            <h3
+              class="text-xl font-semibold text-gray-900 dark:text-white mb-3"
+            >
+              Informasi Umum
+            </h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-2">
+              <strong class="font-medium">Alamat:</strong>
+              <span id="school-address"></span>
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 mb-2">
+              <strong class="font-medium">Akreditasi:</strong>
+              <span id="school-akreditasi"></span>
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              <strong class="font-medium">Situs Resmi:</strong>
+              <a
+                id="school-website"
+                href="#"
+                target="_blank"
+                class="text-blue-600 hover:underline dark:text-blue-400"
+              ></a>
+            </p>
+
+            <div id="school-jurusan-section" class="mb-4 hidden">
+              <h4
+                class="text-lg font-semibold text-gray-900 dark:text-white mb-2"
+              >
+                Jurusan
+              </h4>
+              <ul
+                id="school-jurusan"
+                class="list-disc list-inside text-gray-700 dark:text-gray-300"
+              ></ul>
+            </div>
+
+            <h4
+              class="text-lg font-semibold text-gray-900 dark:text-white mb-2"
+            >
+              Fasilitas
+            </h4>
+            <ul
+              id="school-fasilitas"
+              class="list-disc list-inside text-gray-700 dark:text-gray-300"
+            ></ul>
+
+            <h4
+              class="text-lg font-semibold text-gray-900 dark:text-white mt-4 mb-2"
+            >
+              Ekstrakurikuler
+            </h4>
+            <ul
+              id="school-ekskul"
+              class="list-disc list-inside text-gray-700 dark:text-gray-300"
+            ></ul>
+          </div>
+
+          <div>
+            <h3
+              class="text-xl font-semibold text-gray-900 dark:text-white mb-3"
+            >
+              Lokasi Sekolah
+            </h3>
+            <div
+              id="school-map"
+              class="w-full h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden shadow-md mb-4"
+            >
+              <iframe
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src=""
+              ></iframe>
+            </div>
+            <a
+              id="school-route-btn"
+              href="#"
+              target="_blank"
+              class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-gradient-indigo-pink hover:opacity-90 transition-all duration-300 ease-in-out w-full text-center"
+            >
+              <i class="fas fa-directions mr-2"></i>
+              Dapatkan Rute
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="not-found" class="hidden text-center py-12">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          Sekolah Tidak Ditemukan
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400">
+          Informasi sekolah yang Anda cari tidak tersedia.
+        </p>
+        <a
+          href="sekolah.html"
+          class="mt-6 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-gradient-indigo-pink hover:opacity-90 transition-all duration-300"
+        >
+          Kembali ke Daftar Sekolah
+        </a>
+      </div>
+    </main>
+
+    <footer
+      class="bg-white dark:bg-gray-900 py-6 text-center text-gray-600 dark:text-gray-400 mt-12"
+    >
+      <div class="max-w-screen-xl mx-auto px-4">
+        &copy; 2025 WikiSchool. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <script>
+      // Dummy Data (same as in sekolah.html for consistency)
+      const schools = [
+        {
+          id: "sma-1",
+          name: "SMA Negeri 1 Jakarta",
+          type: "SMA",
+          address: "Jl. Wijaya Kusuma No. 1, Jakarta Pusat, DKI Jakarta",
+          image:
+            "https://images.pexels.com/photos/31986952/pexels-photo-31986952.jpeg",
+          jurusan: [],
+          website: "https://sman1jakarta.sch.id",
+          mapEmbed:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666427387201!2d106.82030097499015!3d-6.175392493817107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d37617d3d7%3A0x67c29e79b92138a0!2sSMA%20Negeri%201%20Jakarta!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid",
+          routeLink:
+            "https://www.google.com/maps/dir/?api=1&destination=SMA+Negeri+1+Jakarta",
+          akreditasi: "A",
+          fasilitas: [
+            "Laboratorium Komputer",
+            "Perpustakaan",
+            "Lapangan Olahraga",
+            "Mushola",
+            "Kantin",
+          ],
+          ekskul: [
+            "Paskibra",
+            "Pramuka",
+            "Basket",
+            "Futsal",
+            "Rohis",
+            "Teater",
+          ],
+        },
+        {
+          id: "smk-1",
+          name: "SMK Negeri 1 Jakarta",
+          type: "SMK",
+          address: "Jl. Budi Utomo No. 1, Jakarta Pusat, DKI Jakarta",
+          image:
+            "https://via.placeholder.com/1200x600/C5D8EE/428CD7?text=SMK+Negeri+1+Jakarta",
+          jurusan: [
+            "Teknik Komputer & Jaringan",
+            "Multimedia",
+            "Akuntansi",
+            "Perhotelan",
+          ],
+          website: "https://smkn1jakarta.sch.id",
+          mapEmbed:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666427387201!2d106.82030097499015!3d-6.175392493817107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d37617d3d7%3A0x67c29e79b92138a0!2sSMK%20Negeri%201%20Jakarta!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid", // Placeholder, use a real one
+          routeLink:
+            "https://www.google.com/maps/dir/?api=1&destination=SMK+Negeri+1+Jakarta",
+          akreditasi: "A",
+          fasilitas: [
+            "Bengkel TKJ",
+            "Lab Multimedia",
+            "Studio Rekaman",
+            "Hotel Mini",
+            "Perpustakaan",
+          ],
+          ekskul: ["Robotik", "Desain Grafis", "Paskibra", "Futsal"],
+        },
+        {
+          id: "sma-2",
+          name: "SMA Swasta Harapan Bangsa",
+          type: "SMA",
+          address: "Jl. Kebon Jeruk No. 10, Jakarta Barat, DKI Jakarta",
+          image:
+            "https://via.placeholder.com/1200x600/DDE6ED/86B6F6?text=SMA+Swasta+Harapan+Bangsa",
+          jurusan: [],
+          website: "https://harapanbangsa.sch.id",
+          mapEmbed:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666427387201!2d106.82030097499015!3d-6.175392493817107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d37617d3d7%3A0x67c29e79b92138a0!2sSMA%20Swasta%20Harapan%20Bangsa!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid", // Placeholder
+          routeLink:
+            "https://www.google.com/maps/dir/?api=1&destination=SMA+Swasta+Harapan+Bangsa",
+          akreditasi: "A",
+          fasilitas: [
+            "Kolam Renang",
+            "Auditorium",
+            "Laboratorium Bahasa",
+            "Lapangan Indoor",
+          ],
+          ekskul: ["Debat", "Musik", "Renang", "Badminton"],
+        },
+        {
+          id: "smk-2",
+          name: "SMK Pusat Unggulan Kreatif",
+          type: "SMK",
+          address: "Jl. Merdeka No. 5, Bandung, Jawa Barat",
+          image:
+            "https://via.placeholder.com/1200x600/DDE6ED/86B6F6?text=SMK+Pusat+Unggulan+Kreatif",
+          jurusan: [
+            "Desain Komunikasi Visual",
+            "Pengembangan Perangkat Lunak",
+            "Tata Boga",
+          ],
+          website: "https://smkpusatunggulan.sch.id",
+          mapEmbed:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666427387201!2d106.82030097499015!3d-6.175392493817107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d37617d3d7%3A0x67c29e79b92138a0!2sSMK%20Pusat%20Unggulan%20Kreatif!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid", // Placeholder
+          routeLink:
+            "https://www.google.com/maps/dir/?api=1&destination=SMK+Pusat+Unggulan+Kreatif",
+          akreditasi: "B",
+          fasilitas: [
+            "Dapur Praktik",
+            "Lab Komputer",
+            "Studio Desain",
+            "Ruang Co-working",
+          ],
+          ekskul: ["Klub Film", "Jurnalistik", "Komunitas Programmer"],
+        },
+        {
+          id: "sma-3",
+          name: "SMA Negeri 2 Bandung",
+          type: "SMA",
+          address: "Jl. Cihampelas No. 1, Bandung, Jawa Barat",
+          image:
+            "https://via.placeholder.com/1200x600/C5D8EE/428CD7?text=SMA+Negeri+2+Bandung",
+          jurusan: [],
+          website: "https://sman2bandung.sch.id",
+          mapEmbed:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666427387201!2d106.82030097499015!3d-6.175392493817107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d37617d3d7%3A0x67c29e79b92138a0!2sSMA%20Negeri%202%20Bandung!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid", // Placeholder
+          routeLink:
+            "https://www.google.com/maps/dir/?api=1&destination=SMA+Negeri+2+Bandung",
+          akreditasi: "A",
+          fasilitas: [
+            "Gedung Olahraga",
+            "Ruang Serbaguna",
+            "Klinik Kesehatan",
+            "Area Parkir Luas",
+          ],
+          ekskul: ["Olimpiade Sains", "Karya Ilmiah Remaja", "Paduan Suara"],
+        },
+        {
+          id: "smk-3",
+          name: "SMK Kesehatan Bakti Utama",
+          type: "SMK",
+          address: "Jl. Pahlawan No. 7, Surabaya, Jawa Timur",
+          image:
+            "https://via.placeholder.com/1200x600/C5D8EE/428CD7?text=SMK+Kesehatan+Bakti+Utama",
+          jurusan: [
+            "Farmasi Klinis dan Komunitas",
+            "Keperawatan Gigi",
+            "Teknologi Laboratorium Medik",
+          ],
+          website: "https://smkkesehatan.sch.id",
+          mapEmbed:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666427387201!2d106.82030097499015!3d-6.175392493817107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d37617d3d7%3A0x67c29e79b92138a0!2sSMK%20Kesehatan%20Bakti%20Utama!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid", // Placeholder
+          routeLink:
+            "https://www.google.com/maps/dir/?api=1&destination=SMK+Kesehatan+Bakti+Utama",
+          akreditasi: "B",
+          fasilitas: [
+            "Laboratorium Farmasi",
+            "Lab Keperawatan",
+            "Simulasi Klinik",
+            "Ruang Steril",
+          ],
+          ekskul: ["Palang Merah Remaja (PMR)", "Kerohanian", "Voli"],
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const schoolId = urlParams.get("id");
+
+        const school = schools.find((s) => s.id === schoolId);
+
+        if (school) {
+          document.getElementById("school-name").textContent = school.name;
+
+          const schoolTypeElement = document.getElementById("school-type");
+          schoolTypeElement.textContent = school.type;
+          if (school.type === "SMA") {
+            schoolTypeElement.classList.add(
+              "bg-indigo-100",
+              "text-indigo-800",
+              "dark:bg-indigo-900",
+              "dark:text-indigo-300"
+            );
+          } else {
+            schoolTypeElement.classList.add(
+              "bg-pink-100",
+              "text-pink-800",
+              "dark:bg-pink-900",
+              "dark:text-pink-300"
+            );
+          }
+
+          document.getElementById("school-image").src = school.image; // Main image for carousel
+          document.getElementById("school-address").textContent =
+            school.address;
+          document.getElementById("school-akreditasi").textContent =
+            school.akreditasi;
+
+          const websiteLink = document.getElementById("school-website");
+          websiteLink.href = school.website;
+          websiteLink.textContent = school.website.replace(/(^\w+:|^)\/\//, ""); // Display without http(s)://
+
+          // Jurusan (conditional for SMK)
+          const jurusanSection = document.getElementById(
+            "school-jurusan-section"
+          );
+          const jurusanList = document.getElementById("school-jurusan");
+          if (
+            school.type === "SMK" &&
+            school.jurusan &&
+            school.jurusan.length > 0
+          ) {
+            jurusanSection.classList.remove("hidden");
+            school.jurusan.forEach((jurusan) => {
+              const li = document.createElement("li");
+              li.textContent = jurusan;
+              jurusanList.appendChild(li);
+            });
+          } else {
+            jurusanSection.classList.add("hidden");
+          }
+
+          // Fasilitas
+          const fasilitasList = document.getElementById("school-fasilitas");
+          if (school.fasilitas && school.fasilitas.length > 0) {
+            school.fasilitas.forEach((fasilitas) => {
+              const li = document.createElement("li");
+              li.textContent = fasilitas;
+              fasilitasList.appendChild(li);
+            });
+          } else {
+            fasilitasList.innerHTML =
+              "<li>Tidak ada informasi fasilitas yang tersedia.</li>";
+          }
+
+          // Ekskul
+          const ekskulList = document.getElementById("school-ekskul");
+          if (school.ekskul && school.ekskul.length > 0) {
+            school.ekskul.forEach((ekskul) => {
+              const li = document.createElement("li");
+              li.textContent = ekskul;
+              ekskulList.appendChild(li);
+            });
+          } else {
+            ekskulList.innerHTML =
+              "<li>Tidak ada informasi ekstrakurikuler yang tersedia.</li>";
+          }
+
+          // Map
+          const mapIframe = document.querySelector("#school-map iframe");
+          mapIframe.src = school.mapEmbed;
+          document.getElementById("school-route-btn").href = school.routeLink;
+
+          document
+            .getElementById("school-detail-container")
+            .classList.remove("hidden");
+          document.getElementById("not-found").classList.add("hidden");
+        } else {
+          document
+            .getElementById("school-detail-container")
+            .classList.add("hidden");
+          document.getElementById("not-found").classList.remove("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
