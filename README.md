@@ -1,9 +1,9 @@
 # 🏫 WikiSchool 📚
 
-[![Build Status](https://img.shields.io/badge/Status-Under%20Development-blue?style=for-the-badge)](https://github.com/your-username/wikischool/actions)
+[![Build Status](https://img.shields.io/badge/Status-Under%20Development-blue?style=for-the-badge)](https://github.com/alii16/wikischool/actions)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/your-username/wikischool?style=for-the-badge&color=gold)](https://github.com/your-username/wikischool/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/your-username/wikischool?style=for-the-badge&color=lightgray)](https://github.com/your-username/wikischool/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/alii16/wikischool?style=for-the-badge&color=gold)](https://github.com/alii16/wikischool/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/alii16/wikischool?style=for-the-badge&color=lightgray)](https://github.com/alii16/wikischool/network/members)
 
 ![WikiSchool Hero Image](img/hero-wikischool.png) WikiSchool adalah platform web inovatif yang dirancang untuk menjadi **jembatan informasi** bagi calon siswa SMA/SMK di Kecamatan Sirimau, Ambon. Kami hadir untuk menyederhanakan proses pencarian sekolah impian dengan menyediakan akses cepat ke data akurat dan terkini mengenai fasilitas, program studi, akreditasi, dan detail kontak sekolah.
 
@@ -48,10 +48,9 @@ Ikuti langkah-langkah mudah ini untuk menjalankan WikiSchool di mesin lokal Anda
 1.  **Kloning Repositori:**
     Buka Terminal atau Command Prompt, dan jalankan perintah berikut:
     ```bash
-    git clone [https://github.com/your-username/wikischool.git](https://github.com/your-username/wikischool.git)
+    git clone [https://github.com/alii16/wikischool.git](https://github.com/alii16/wikischool.git)
     cd wikischool
     ```
-    *(**Penting:** Ganti `your-username` dengan nama pengguna GitHub Anda.)*
 
 2.  **Buka di Browser:**
     Karena ini adalah proyek frontend murni, Anda tidak memerlukan server backend. Cukup buka salah satu file HTML di browser web pilihan Anda:
@@ -95,6 +94,6 @@ Proyek ini dilisensikan di bawah **[Lisensi MIT](LICENSE)**. Ini berarti Anda be
 
 Ada pertanyaan, saran, atau ingin berkolaborasi? Jangan ragu untuk menghubungi kami:
 
-* **Email:** contact@wikischool.com * **GitHub:** [your-username](https://github.com/your-username) * **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/your-linkedin-profile) ---
+* **Email:** contact@wikischool.com * **GitHub:** [alii16](https://github.com/alii16) * **LinkedIn:** [Ali Polanunu](https://www.linkedin.com/in/alii-polanunu/) ---
 
 Terima kasih telah mengunjungi repositori WikiSchool! Kami harap proyek ini bermanfaat. ✨
