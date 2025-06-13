@@ -5,7 +5,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/alii16/wikischool?style=for-the-badge&color=gold)](https://github.com/alii16/wikischool/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/alii16/wikischool?style=for-the-badge&color=lightgray)](https://github.com/alii16/wikischool/network/members)
 
-![WikiSchool Hero Image]![image](https://github.com/user-attachments/assets/8da9c699-36c4-4fff-a179-2f8a966c2b08)
+![image](https://github.com/user-attachments/assets/8da9c699-36c4-4fff-a179-2f8a966c2b08)
  WikiSchool adalah platform web inovatif yang dirancang untuk menjadi **jembatan informasi** bagi calon siswa SMA/SMK di Kecamatan Sirimau, Ambon. Kami hadir untuk menyederhanakan proses pencarian sekolah impian dengan menyediakan akses cepat ke data akurat dan terkini mengenai fasilitas, program studi, akreditasi, dan detail kontak sekolah.
 
 > "Membantu Anda menemukan jalur pendidikan yang tepat, satu informasi pada satu waktu."
