@@ -1,199 +1,86 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daftar Sekolah - WikiSchool</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/sekolah.css">
     <style>
-        .bg-gradient-indigo-pink {
-            background: linear-gradient(to right, #6366F1, #EC4899);
-        }
-        .text-gradient-indigo-pink {
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(to right, #6366F1, #EC4899);
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-        
-        /* Enhanced animations and effects */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes shimmer {
-            0% {
-                background-position: -200px 0;
-            }
-            100% {
-                background-position: calc(200px + 100%) 0;
-            }
-        }
-        
-        .animate-fade-in-up {
-            animation: fadeInUp 0.6s ease-out forwards;
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-gradient::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%), 
-                        linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%), 
-                        linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.1) 75%), 
-                        linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.1) 75%);
-            background-size: 20px 20px;
-            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-            animation: shimmer 3s linear infinite;
-        }
-        
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .dark .glass-effect {
-            background: rgba(31, 41, 55, 0.95);
-            border: 1px solid rgba(75, 85, 99, 0.3);
-        }
-        
-        .floating-card {
-            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
-        
-        .floating-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15), 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .filter-btn-enhanced {
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        
-        .filter-btn-enhanced::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
-        }
-        
-        .filter-btn-enhanced:hover::before {
-            left: 100%;
-        }
-        
-        .search-container {
-            position: relative;
-        }
-        
-        .search-container::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(to right, #6366F1, #EC4899);
-            transition: all 0.3s ease;
-            transform: translateX(-50%);
-        }
-        
-        .search-container:focus-within::after {
-            width: 100%;
-        }
-        
-        .card-image-overlay {
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .card-image-overlay::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .floating-card:hover .card-image-overlay::after {
-            opacity: 1;
-        }
-        
-        .pulse-dot {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.5;
-            }
-        }
-        
-        .gradient-border {
-            background: linear-gradient(white, white) padding-box,
-                        linear-gradient(45deg, #6366F1, #EC4899) border-box;
-            border: 2px solid transparent;
-        }
-        
-        .dark .gradient-border {
-            background: linear-gradient(#374151, #374151) padding-box,
-                        linear-gradient(45deg, #6366F1, #EC4899) border-box;
-        }
-    </style>
-</head>
-<body class="font-sans antialiased text-gray-800 bg-gray-50 dark:bg-gray-900">
+      .filter-btn-enhanced {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
 
+      .filter-btn-enhanced::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .filter-btn-enhanced:hover::before {
+        left: 100%;
+      }
+
+      .search-container {
+        position: relative;
+      }
+
+      .search-container::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(to right, #6366f1, #ec4899);
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+      }
+
+      .search-container:focus-within::after {
+        width: 100%;
+      }
+
+            /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #6366f1, #ec4899);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #4f46e5, #db2777);
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased text-gray-800 dark:text-gray-200 bg-gray-50 dark:bg-gray-900">
     <nav
-      class="bg-white/80 backdrop-blur-md border-gray-200 px-4 dark:bg-gray-900/80 shadow-lg sticky top-0 z-50 transition-all duration-300 sticky top-0 z-50"
+      class="bg-white/80 backdrop-blur-md border-gray-200 px-4 dark:bg-gray-900/80 shadow-md sticky top-0 z-50 transition-all duration-300 sticky top-0 z-50"
     >
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
@@ -246,7 +133,6 @@
               <a
                 href="index.html"
                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-1 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                
                 ><i class="fas fa-home mr-2"></i> Home</a
               >
             </li>
@@ -270,102 +156,157 @@
       </div>
     </nav>
 
-<section class="relative overflow-hidden text-gray-800 mt-12">
-    <div class="max-w-screen-xl mx-auto px-4 text-center relative z-20">
+    <section class="relative bg-white overflow-hidden text-gray-800 mt-12">
+      <div class="max-w-screen-xl mx-auto px-4 text-center relative z-20">
         <div class="space-y-6">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
-                Temukan Sekolah 
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500">
-                    Impianmu
-                </span>
-            </h1>
-            <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed opacity-90">
-                Jelajahi berbagai pilihan sekolah terbaik dengan fasilitas lengkap dan kualitas pendidikan terpercaya. Kami siap membantumu menemukan jalan menuju masa depan cerah!
-            </p>
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight"
+          >
+            Temukan Sekolah
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500"
+            >
+              Impianmu
+            </span>
+          </h1>
+          <p
+            class="text-lg sm:text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed opacity-90"
+          >
+            Jelajahi berbagai pilihan sekolah terbaik dengan fasilitas lengkap
+            dan kualitas pendidikan terpercaya. Kami siap membantumu menemukan
+            jalan menuju masa depan cerah!
+          </p>
 
-            <div class="flex flex-wrap items-center justify-center space-x-6 text-xl mt-12 opacity-80">
-                <div class="flex items-center space-x-2">
-                    <div class="w-3 h-3 bg-green-500 rounded-full pulse-dot"></div>
-                    <span class="text-gray-700 text-sm">100+ Sekolah Terdaftar</span>
-                </div>
-                <div class="hidden md:block w-px h-8 bg-gray-300"></div>
-                <div class="flex items-center space-x-2 mt-4 md:mt-0">
-                    <div class="w-3 h-3 bg-yellow-500 rounded-full pulse-dot"></div>
-                    <span class="text-gray-700 text-sm">Akreditasi A & B</span>
-                </div>
+          <div
+            class="flex flex-wrap items-center justify-center space-x-6 text-xl mt-12 opacity-80"
+          >
+            <div class="flex items-center space-x-2">
+              <div class="w-3 h-3 bg-green-500 rounded-full pulse-dot"></div>
+              <span class="text-gray-700 text-sm">100+ Sekolah Terdaftar</span>
             </div>
-        </div>
-    </div>
-
-</section>
-
-    <main class="max-w-screen-xl mx-auto px-4 py-8">
-        <!-- Filter and Search Section -->
-        <div class="glass-effect rounded-2xl p-6 mb-12 shadow-md">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                
-                <!-- Filter Buttons -->
-                <div class="flex flex-wrap gap-3 w-full md:w-auto justify-center">
-                    <button type="button" data-filter="all" class="filter-btn filter-btn-enhanced px-6 py-3 text-sm font-semibold rounded-xl text-white bg-gradient-indigo-pink shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2">
-                        <i class="fas fa-list"></i>
-                        <span>Semua Sekolah</span>
-                    </button>
-                    <button type="button" data-filter="sma" class="filter-btn filter-btn-enhanced px-6 py-3 text-sm font-semibold rounded-xl text-gray-700 bg-white border-2 border-gray-200 shadow-md hover:shadow-lg hover:border-indigo-300 focus:outline-none focus:ring-4 focus:ring-indigo-100 dark:bg-gray-700 dark:text-gray-100 dark:border-gray-600 dark:hover:bg-gray-600 transform hover:scale-105 transition-all duration-300 flex items-center space-x-2">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>SMA</span>
-                    </button>
-                    <button type="button" data-filter="smk" class="filter-btn filter-btn-enhanced px-6 py-3 text-sm font-semibold rounded-xl text-gray-700 bg-white border-2 border-gray-200 shadow-md hover:shadow-lg hover:border-pink-300 focus:outline-none focus:ring-4 focus:ring-pink-100 dark:bg-gray-700 dark:text-gray-100 dark:border-gray-600 dark:hover:bg-gray-600 transform hover:scale-105 transition-all duration-300 flex items-center space-x-2">
-                        <i class="fas fa-tools"></i>
-                        <span>SMK</span>
-                    </button>
-                </div>
-
-                <!-- Search Bar -->
-                <div class="search-container w-full md:w-80">
-                    <div class="relative">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
-                            <i class="fas fa-search text-gray-400 text-lg"></i>
-                        </div>
-                        <input type="text" id="school-search" class="gradient-border block w-full pl-12 pr-4 py-4 text-sm text-gray-900 rounded-xl bg-white/90 focus:ring-4 focus:ring-indigo-100 focus:border-transparent transition-all duration-300 dark:bg-gray-700/90 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-900" placeholder="Cari nama sekolah atau lokasi...">
-                        <div class="absolute inset-y-0 right-0 flex items-center pr-4">
-                            <kbd class="px-2 py-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">⌘K</kbd>
-                        </div>
-                    </div>
-                </div>
+            <div class="hidden md:block w-px h-8 bg-gray-300"></div>
+            <div class="flex items-center space-x-2 mt-4 md:mt-0">
+              <div class="w-3 h-3 bg-yellow-500 rounded-full pulse-dot"></div>
+              <span class="text-gray-700 text-sm">Akreditasi A & B</span>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- School Cards Grid -->
-        <div id="school-list" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-        </div>
-
-        <!-- No Results Message -->
-        <div id="no-results" class="text-center py-16 hidden">
-            <div class="max-w-md mx-auto">
-                <div class="w-24 h-24 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="fas fa-search text-gray-500 text-3xl"></i>
-                </div>
-                <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Tidak ada sekolah ditemukan</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-6">Coba ubah filter atau kata kunci pencarian Anda</p>
-                <button onclick="clearFilters()" class="px-6 py-3 bg-gradient-indigo-pink text-white rounded-xl font-semibold hover:opacity-90 transition-opacity">
-                    Reset Filter
-                </button>
+    <main class="max-w-screen-xl bg-white mx-auto px-8 py-8">
+      <!-- Filter and Search Section -->
+      <div class="glass-effect rounded-2xl p-6 mb-12 shadow-md">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <!-- Filter Buttons -->
+          <div class="flex flex-wrap gap-3 w-full md:w-auto justify-center">
+            <div class="w-full md:w-auto">
+              <select
+                id="filter-jenjang"
+                class="filter-btn-enhanced block w-full p-3 text-sm font-semibold text-gray-700 border border-gray-300 rounded-lg bg-white focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 shadow-sm"
+              >
+                <option value="all">Semua Jenjang</option>
+                <option value="sma">SMA</option>
+                <option value="smk">SMK</option>
+                <option value="ma">MA</option>
+              </select>
             </div>
+
+            <div class="w-full md:w-auto">
+              <select
+                id="filter-kecamatan"
+                class="filter-btn-enhanced block w-full p-3 text-sm font-semibold text-gray-700 border border-gray-300 rounded-lg bg-white focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 shadow-sm"
+              >
+                <option value="all">Semua Kecamatan</option>
+              </select>
+            </div>
+
+            <button
+              type="button"
+              onclick="clearFilters()"
+              class="filter-btn filter-btn-enhanced px-6 py-3 text-sm font-semibold rounded-xl text-white bg-gradient-indigo-pink shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2"
+            >
+              <i class="fas fa-rotate-right fa-spin"></i>
+              <span>Reset</span>
+            </button>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="search-container w-full md:w-80">
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-4"
+              >
+                <i class="fas fa-search text-gray-400 text-lg transition-transform hover:scale-110"></i>
+              </div>
+              <input
+                type="text"
+                id="school-search"
+                class="gradient-border block w-full pl-12 pr-4 py-4 text-sm text-gray-900 rounded-xl bg-white/90 focus:ring-4 focus:ring-indigo-100 focus:border-transparent transition-all duration-300 dark:bg-gray-700/90 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-900"
+                placeholder="Cari nama sekolah atau lokasi..."
+              />
+              <div class="absolute inset-y-0 right-0 flex items-center pr-4">
+                <kbd
+                  class="px-2 py-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                  >⌘K</kbd
+                >
+              </div>
+            </div>
+          </div>
+
         </div>
+        <span id="totalschool" class="text-xs font-medium text-gray-500"></span>
+      </div>
+
+      <!-- School Cards Grid -->
+      <div
+        id="school-list"
+        class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-3 gap-8"
+      ></div>
+
+      <!-- No Results Message -->
+      <div id="no-results" class="text-center py-16 hidden">
+        <div class="max-w-md mx-auto">
+          <div
+            class="w-24 h-24 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center mx-auto mb-6"
+          >
+            <i class="fas fa-search text-gray-500 text-3xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+            Tidak ada sekolah ditemukan
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            Coba ubah filter atau kata kunci pencarian Anda
+          </p>
+          <button
+            onclick="clearFilters()"
+            class="px-6 py-3 bg-gradient-indigo-pink text-white rounded-xl font-semibold hover:opacity-90 transition-opacity"
+          >
+            Reset Filter
+          </button>
+        </div>
+      </div>
     </main>
 
-    <footer class="bg-white dark:bg-gray-900 py-6 text-center text-gray-600 dark:text-gray-400 mt-12">
-        <div class="max-w-screen-xl mx-auto px-4">
-            &copy; 2025 WikiSchool. All rights reserved.
-        </div>
+    <footer
+      class="bg-white dark:bg-gray-900 py-6 text-center text-gray-600 dark:text-gray-400 mt-12"
+    >
+      <div class="max-w-screen-xl mx-auto px-4">
+        &copy; 2025 WikiSchool. All rights reserved.
+      </div>
     </footer>
 
     <!-- Back to top button -->
-    <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-indigo-pink text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 invisible">
+    <button
+      id="backToTop"
+      class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-indigo-pink text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 invisible z-50"
+    >
       <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="js/sekolah.js"></script>
-</body>
+  </body>
 </html>

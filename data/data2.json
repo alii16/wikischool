@@ -1,0 +1,320 @@
+[
+    {
+        "id": "sma-1",
+        "name": "SMA Xaverius Ambon",
+        "npsn": "60102016",
+        "type": "SMA",
+        "jenis": "Swasta",
+        "address": "Jl. Pattimura No. 25, uritetu, Kec. Sirimau, Kota Ambon, Maluku.",
+        "kecamatan": "Sirimau",
+        "image": "https://i.ytimg.com/vi/WvO4YeVvd8k/maxresdefault.jpg",
+        "email": "ambonsmaver@xaverius-ambon.org",
+        "website": "http://www.smaver.sch.id",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.5146744918948!2d128.18303207584046!3d-3.6971819962767674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce83fc12103db%3A0x1755f59fd28c772e!2sSMA%20XAVERIUS%20AMBON!5e0!3m2!1sid!2sid!4v1749818981169!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795257,128.208553/SMA+XAVERIUS+AMBON,+Kel+Wainitu,+Kota+Ambon,+Maluku/@-3.687814,128.1861683,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce83fc12103db:0x1755f59fd28c772e!2m2!1d128.185607!2d-3.697182?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "A",
+        "jurusan": ["MIPA", "IPS"],
+        "fasilitas": [
+            "15 Ruang Kelas",
+            "1 Perpustakaan", "2 Laboratorium", "4 Fasilitas Sanitasi"
+        ]
+    },
+    {
+        "id": "sma-2",
+        "name": "SMA Negeri 11 Ambon",
+        "npsn": "60102965",
+        "type": "SMA",
+        "jenis": "Negeri",
+        "address": "Jl. Jenderal Soedirman, Batu Merah, Kec. Sirimau, Kota Ambon, Maluku",
+        "kecamatan": "Sirimau",
+        "image": "https://www.e-ujian.com/sman11ambon/logo",
+        "email": "smanegeri11ambon@gmail.com",
+        "website": "http://www.sman11-ambon.sch.id",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.581305623325!2d128.19306079999998!3d-3.6823133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce9005b273ce1%3A0xfcf1e1ff808ce4aa!2sSMAN%2011%20Ambon!5e0!3m2!1sid!2sid!4v1749816622583!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795303,128.2085442/859V%2B36F+SMAN+11+Ambon,+Batu+Merah,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.6807856,128.1954724,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce9005b273ce1:0xfcf1e1ff808ce4aa!2m2!1d128.1930609!2d-3.6823134?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "B",
+        "jurusan": ["MIPA", "IPS"],
+        "fasilitas": [
+            "22 Ruang Kelas",
+            "1 Perpustakaan", "2 Laboratorium", "2 Fasilitas Sanitasi"
+        ]
+    },
+    {
+        "id": "sma-3",
+        "name": "SMA Kristen Kalam Kudus",
+        "npsn": "60102962",
+        "type": "SMA",
+        "jenis": "Swasta",
+        "address": "Jl. Putu Ina, Kota Ambon",
+        "kecamatan": "Sirimau",
+        "image": "https://skkkambon.sch.id/wp-content/uploads/elementor/thumbs/DSC00628-scaled-pnyf5g9jyzjbawl9ofgwqka373huqy5nf8mopil9c8.jpg",
+        "email": "smakalamkudusa31@gmail.com",
+        "website": "http://simpadamu.siap.web.id/60102962",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.5556492274923!2d128.18752587584015!3d-3.68804559628593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce855330f167b%3A0x620827e277e01796!2sSMA%20dan%20SMP%20Kristen%20Kalam%20Kudus%20Ambon!5e0!3m2!1sid!2sid!4v1749830498054!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795061,128.2085448/857Q%2B3Q9+SMA+dan+SMP+Kristen+Kalam+Kudus+Ambon,+97122,+Jl.+Pitu+Ina,+Kel+Amantelu,+Sirimau,+Kota+Ambon,+Maluku/@-3.683819,128.1930337,16z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce855330f167b:0x620827e277e01796!2sSMA+dan+SMP+Kristen+Kalam+Kudus+Ambon!8m2!3d-3.6880456!4d128.1901008!16s%2Fg%2F11d_1q5k09!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce855330f167b:0x620827e277e01796!2m2!1d128.1901008!2d-3.6880456?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "B",
+        "jurusan": ["Jurusan Umum"],
+        "fasilitas": [
+            "6 Ruang Kelas", "1 Laboratorium", "Fasilitas Sanitasi"
+        ]
+    },
+    {
+        "id": "sma-4",
+        "name": "SMA Negeri 13 Ambon",
+        "npsn": "60102966",
+        "type": "SMA",
+        "jenis": "Negeri",
+        "address": "Jl. Jenderal Soedirman, Pandan Kasturi, Kec. Sirimau, Kota Ambon, Maluku.",
+        "kecamatan": "Sirimau",
+        "image": "https://siwalimanews.com/wp-content/uploads/2022/07/sman-13-1.gif",
+        "email": "sma13.ambon@gmail.com",
+        "website": "",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.6132727280274!2d128.188912584699!3d-3.6751585367556516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce91c40592841%3A0xd7bf76318b9867bf!2sPandan%20Kasturi%2C%20Kec.%20Sirimau%2C%20Kota%20Ambon%2C%20Maluku!5e0!3m2!1sid!2sid!4v1749817252530!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795303,128.2085442/Pandan+Kasturi,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.6750027,128.1949775,16z/data=!3m1!4b1!4m18!1m8!3m7!1s0x2d6ce91c40592841:0xd7bf76318b9867bf!2sPandan+Kasturi,+Kec.+Sirimau,+Kota+Ambon,+Maluku!3b1!8m2!3d-3.6750695!4d128.1939378!16s%2Fg%2F120rs1qd!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce91c40592841:0xd7bf76318b9867bf!2m2!1d128.1939378!2d-3.6750695?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "A",
+        "jurusan": ["MIPA", "IPS"],
+        "fasilitas": [
+            "28 Ruang Kelas",
+            "1 Perpustkaan", "1 Laboratorium", "1 Lapangan Olahraga"
+        ]
+    },
+    {
+        "id": "sma-5",
+        "name": "SMA Al Hilaal Ambon",
+        "npsn": "60103930",
+        "type": "SMA",
+        "jenis": "Swasta",
+        "address": "Jl. Anthoni Rebook, Surabaya",
+        "kecamatan": "Sirimau",
+        "image": "https://kfmap.asia/storage/thumbs/storage/photos/ID.AMB.PS.AHSMA/ID.AMB.PS.AHSMA_1.jpeg",
+        "email": "smaalhilaal@yahoo.co.id",
+        "website": "http://smaalhilaal.sch.id",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15926.075731990997!2d128.16165918715822!3d-3.6962334999999915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce84fbe2b60c7%3A0x5a8a08b5ca3c8692!2sYayasan%20Al-Hilaal%20Pusat%20Ambon!5e0!3m2!1sid!2sid!4v1749830738488!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795061,128.2085448/Yayasan+Al-Hilaal+Pusat+Ambon,+Jl.+Anthony+Rebok+Rhebok+No.21,+Kel+Honipopu,+Sirimau,+Kota+Ambon,+Maluku+97126/@-3.687372,128.1740881,14z/data=!3m1!4b1!4m18!1m8!3m7!1s0x2d6ce84fbe2b60c7:0x5a8a08b5ca3c8692!2sYayasan+Al-Hilaal+Pusat+Ambon!8m2!3d-3.6962335!4d128.1807136!15sCiBTTUEgIEFsIEhpbGFhbCBBbWJvbiwgS290YSBBbWJvbpIBCmZvdW5kYXRpb26qAVoQASoRIg1zbWEgYWwgaGlsYWFsKCYyHxABIhsLs_vUkwKHN-MJ_vDdlW9HNwMv3suRK9nMUjcyIhACIh5zbWEgYWwgaGlsYWFsIGFtYm9uIGtvdGEgYW1ib27gAQA!16s%2Fg%2F11gb3wdv4r!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce84fbe2b60c7:0x5a8a08b5ca3c8692!2m2!1d128.1807047!2d-3.6962225?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "B",
+        "jurusan": ["MIPA", "IPS"],
+        "fasilitas": [
+            "4 Ruang Kelas",
+            "1 Perpustakaan", "1 Laboratorium", "2 Fasilitas Sanitasi"
+        ]
+    },
+    {
+        "id": "sma-6",
+        "name": "SMA PGRI 1 Ambon",
+        "npsn": "60102967",
+        "type": "SMA",
+        "jenis": "Swasta",
+        "address": "Jl. Yan Paays, Kel Ahusen, Kec. Sirimau, Kota Ambon, Maluku",
+        "kecamatan": "Sirimau",
+        "image": "https://kfmap.asia/storage/thumbs/storage/photos/ID.AMB.PS.PGRISMP1/ID.AMB.PS.PGRISMP1_2.jpeg",
+        "email": "sma_pgri1amq@yahoo.com",
+        "website": "",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.5165464007328!2d128.1808060758401!3d-3.696765096277203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce83fc12103db%3A0x1ae474c5dccb16c6!2sSekolah%20Menengah%20Atas%20PGRI%201!5e0!3m2!1sid!2sid!4v1749830814845!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795061,128.2085448/Sekolah+Menengah+Atas+PGRI+1,+Jl.+Yan+Paays+No.6,+Kel+Wainitu,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.688837,128.1857216,15z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce83fc12103db:0x1ae474c5dccb16c6!2sSekolah+Menengah+Atas+PGRI+1!8m2!3d-3.6967651!4d128.183381!16s%2Fg%2F1pzs12csx!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce83fc12103db:0x1ae474c5dccb16c6!2m2!1d128.1833809!2d-3.6967652?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "B",
+        "jurusan": ["Jurusan Umum"],
+        "fasilitas": [
+            "11 Ruang Kelas",
+            "1 Perpustakaan", "1 Laboratorium", "3 Fasilitas Sanitasi"
+        ]
+    },
+    {
+        "id": "sma-7",
+        "name": "SMA Negeri 2 Ambon",
+        "npsn": "60102006",
+        "type": "SMA",
+        "jenis": "Negeri",
+        "address": "Jl. Jan Paays, Uritetu, Kec. Sirimau, Kota Ambon, Maluku",
+        "kecamatan": "Sirimau",
+        "image": "https://yt3.googleusercontent.com/0DPw4jYIi83_dGpXqAxQRMG1VWh1Hk6z1ltHlYivLNJCnNitSUORhbiKNT0bP-dK85qoH4Q4Yg=s900-c-k-c0x00ffffff-no-rj",
+        "email": "smanduambon@gmail.com",
+        "website": "www.sman1ambon.sch.id",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.511749689508!2d128.18198887584012!3d-3.697833296276129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce9006620f0ed%3A0xbeb01638f6ee3f3f!2sSMA%20Negeri%202%20Ambon!5e0!3m2!1sid!2sid!4v1749830886068!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795061,128.2085448/852M%2BVV7+SMA+Negeri+2+Ambon,+Uritetu,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.688837,128.1862401,15z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce9006620f0ed:0xbeb01638f6ee3f3f!2sSMA+Negeri+2+Ambon!8m2!3d-3.6978333!4d128.1845638!16s%2Fg%2F122hcvqp!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce9006620f0ed:0xbeb01638f6ee3f3f!2m2!1d128.1845296!2d-3.6978586?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "B",
+        "jurusan": ["MIPA", "IPS"],
+        "fasilitas": [
+            "18 Ruang Kelas",
+            "1 Perpustakaan", "3 Laboratorium", "2 Fasilitas Sanitasi"
+        ]
+    },
+    {
+        "id": "sma-8",
+        "name": "SMA Negeri 1 Ambon",
+        "npsn": "60102008",
+        "type": "SMA",
+        "jenis": "Negeri",
+        "address": "Jl. Raya Pattimura No. 29, Uritetu, Kec. Sirimau, Kota Ambon, Maluku",
+        "kecamatan": "Sirimau",
+        "image": "https://mail.sman1ambon.sch.id/media_library/images/6603478c88385e7902caf898d8e555e0.png",
+        "email": "terataismansa@yahoo.com",
+        "website": "www.sman1ambon.sch.id",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.514547415295!2d128.18270374028006!3d-3.6972102962922575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce90041f05151%3A0xcfa423a32f5a134a!2sSMA%20Negeri%201%20Ambon!5e0!3m2!1sid!2sid!4v1749824748987!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795386,128.2085353/SMA+Negeri+1+Ambon,+Jl.+Pattimura+No.28,+Uritetu,+Sirimau,+Kota+Ambon,+Maluku/@-3.6878188,128.1759113,14z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce90041f05151:0xcfa423a32f5a134a!2sSMA+Negeri+1+Ambon!8m2!3d-3.6972103!4d128.1852733!16s%2Fg%2F122jkppm!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce90041f05151:0xcfa423a32f5a134a!2m2!1d128.1852713!2d-3.6972116?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "A",
+        "jurusan": ["MIPA", "IPS", "Bahasa"],
+        "fasilitas": [
+            "25 Ruang Kelas",
+            "1 Perpustakaan", "4 Laboratorium", "1 Fasilitas sanitasi", "Beberapa Ruang Praktik", "Lapangan Olahraga", "Mushola", "Kantin"
+        ]
+    },
+    {
+        "id": "sma-9",
+        "name": "SMA Kristen Ypkpm Ambon",
+        "npsn": "60102021",
+        "type": "SMA",
+        "jenis": "Swasta",
+        "address": "Jl. Diponegoro No. 61, Kec. Sirimau, Kota Ambon, Maluku",
+        "kecamatan": "Sirimau",
+        "image": "https://tse3.mm.bing.net/th?id=OIP.n-_jRCzacQeWq4nsYbjXcAEsEj&pid=Api&P=0&h=220",
+        "email": "smakristenypkpm@gmail.com",
+        "website": "https://www.smakrisambon.sch.id/",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.4986969998017!2d128.1804915402802!3d-3.7007384962887175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce849a0fc4793%3A0xdd09e6c8704fcd1f!2sSMA%20Kristen%20YPKPM%20Ambon!5e0!3m2!1sid!2sid!4v1749826506810!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6794878,128.2085397/SMA+Kristen+YPKPM+Ambon,+Jl.+Diponegoro+No.61,+Kel+Ahusen,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.6903632,128.1751463,14z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce849a0fc4793:0xdd09e6c8704fcd1f!2sSMA+Kristen+YPKPM+Ambon!8m2!3d-3.7007385!4d128.1830611!16s%2Fg%2F11g6y_q46l!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce849a0fc4793:0xdd09e6c8704fcd1f!2m2!1d128.1830611!2d-3.7007385?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "A",
+        "jurusan": ["Peminatan & Proyek"],
+        "fasilitas": [
+            "14 Ruang Kelas",
+            "1 Perpustakaan", "3 Laboratorium", "2 Fasilitas Sanitasi"
+        ]
+    },
+    {
+        "id": "sma-10",
+        "name": "SMA Negeri 15 Ambon",
+        "npsn": "69933068",
+        "type": "SMA",
+        "jenis": "Negeri",
+        "address": "Jl. Wara Kembang Buton, Hative Kecil, Kec. Sirimau, Kota Ambon, Maluku",
+        "kecamatan": "Sirimau",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrtCMw9kFtJ6CfOL85xdEj_lDWqmJ_kg2u42wJTwQWwBPF4irKrCD0PoDq_LnoCYMxWEtASntal88gN_rb4Ws-TyD2RDrSGbbB4x1As-b5a3bIT-qE058TNIbTeT_19HWiYyXGbFA=w520-h240-k-no",
+        "email": "yasnusmag7@gmail.com",
+        "website": "",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.611813227326!2d128.21046909999998!3d-3.6754855000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce941a733bfab%3A0x89ad6370e229c5a3!2sSMA%20NEGERI%2015%20AMBON!5e0!3m2!1sid!2sid!4v1749831164007!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795076,128.2085623/86F6%2BR55+SMA+NEGERI+15+AMBON,+Jl.+Wara+Kembang+Buton,+Hative+Kecil,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.6777064,128.2102638,17z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce941a733bfab:0x89ad6370e229c5a3!2sSMA+NEGERI+15+AMBON!8m2!3d-3.6754855!4d128.2104691!16s%2Fg%2F11fwf_ysqv!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce941a733bfab:0x89ad6370e229c5a3!2m2!1d128.2105913!2d-3.6755196?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3DD",
+        "akreditasi": "A",
+        "jurusan": ["MIPA", "IPS"],
+        "fasilitas": [
+            "6 Ruang Kelas",
+            "1 Perpustakaan", "1 Laboratorium","2 Fasilitas Sanitasi"
+        ]
+    },
+    {
+        "id": "smk-1",
+        "name": "SMK Muhammadiyah Ambon",
+        "npsn": "60102779",
+        "type": "SMK",
+        "jenis": "Swasta",
+        "address": "Jl. KH Ahmad Dahlan RT. 001/19, Batu Merah, Kec. Sirimau, Kota Ambon, Maluku.",
+        "kecamatan": "Sirimau",
+        "image": "https://tse4.mm.bing.net/th?id=OIP.Zxt_KIlddIAk9yPShQ8NWgHaFj&pid=Api&P=0&h=220",
+        "email": "sma_muhammadiyahamq@yahoo.co.id",
+        "website": "http://www.esemka-muh-ambon.sch.id",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.5933093562076!2d128.21386587583993!3d-3.67962829629438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce9716285eac7%3A0xb6f56c0b5d188d7c!2sSMK%20Muhammadiyah%20Ambon!5e0!3m2!1sid!2sid!4v1749819924051!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795386,128.2085353/SMK+Muhammadiyah+Ambon,+Batu+Merah,+Sirimau,+Kota+Ambon,+Maluku/@-3.6809715,128.209664,17z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce9716285eac7:0xb6f56c0b5d188d7c!2sSMK+Muhammadiyah+Ambon!8m2!3d-3.6796283!4d128.2164408!16s%2Fg%2F11fy_frw7t!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce9716285eac7:0xb6f56c0b5d188d7c!2m2!1d128.2164753!2d-3.6796513?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "A",
+        "jurusan": ["Akuntansi & Keuangan Lembaga", "Desain Pemodelan & Informasi Bangunan", "Teknik Instalasi Tenaga Listrik", "Teknik Jaringan Komputer & Telekomunikasi","Teknik Ketenagalistrikan", "Teknik Komputer & Jaringan"],
+        "fasilitas": [
+            "16 Ruang Kelas",
+            "1 Perpustakaan", "2 Laboratorim", "2 Fasilitas Sanitasi", "3 Ruang Kejuruan"
+        ]
+    },
+    {
+        "id": "smk-2",
+        "name": "SMK Jayanegara",
+        "npsn": "60103671",
+        "type": "SMK",
+        "jenis": "Swasta",
+        "address": "Jl. Pandan Kasturi No. 2, Tantui Bawah, Kec. Sirimau, Kota Ambon, Maluku.",
+        "kecamatan": "Sirimau",
+        "image": "https://tse3.mm.bing.net/th?id=OIP.wlCLt2Ix-4C4ShZqsayyrgHaHa&pid=Api&P=0&h=220",
+        "email": "smkjayanegaraamq@gmail.com",
+        "website": "http://www.smkjayanegaraamq.sch.id",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.617172300264!2d128.1902621758402!3d-3.674284796299719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce91c3a0bc3c5%3A0xb49f57c5aef52706!2sSMK%20Jaya%20Negara%20Ambon!5e0!3m2!1sid!2sid!4v1749831254301!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795076,128.2085623/SMK+Jaya+Negara+Ambon,+Jl.+Pandan+Kasturi+No.II,+Pandan+Kasturi,+Kec.+Sirimau,+Kota+Ambon,+Maluku+97128/@-3.6750027,128.1949775,16z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce91c3a0bc3c5:0xb49f57c5aef52706!2sSMK+Jaya+Negara+Ambon!8m2!3d-3.6742848!4d128.1928371!16s%2Fg%2F11g6wtlq9h!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce91c3a0bc3c5:0xb49f57c5aef52706!2m2!1d128.1928348!2d-3.6742869?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "C",
+        "jurusan": ["Teknik Jaringan & Komputer"],
+        "fasilitas": [
+            "3 Ruang Kelas",
+            "1 Perpustakaan", "2 Fasilitas Sanitasi"
+        ]
+    },
+    {
+        "id": "smk-3",
+        "name": "SMK Kesehatan Trimurti husada Ambon",
+        "npsn": "69902359",
+        "type": "SMK",
+        "jenis": "Swasta",
+        "address": "Jl. Haruhun, Karang Panjang, Kec. Sirimau, Kota Ambon, Maluku.",
+        "kecamatan": "Sirimau",
+        "image": "https://tse1.mm.bing.net/th?id=OIP.uuMX1j3y_0o4eVdxNFHTBAHaHg&pid=Api&P=0&h=220",
+        "email": "smkkesehatan_trimurtihusada@yahoo.co.id",
+        "website": "-",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.533591803739!2d128.19692238469943!3d-3.692966686691829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce91e71f27f55%3A0xf44cedb1ae89bb7!2sSMK%20Kesehatan%20Trimurti%20Husada%20Ambon!5e0!3m2!1sid!2sid!4v1749831316570!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795076,128.2085623/SMK+Kesehatan+Trimurti+Husada+Ambon,+Jalan+Tabea+Jou+No.8,+Waihoka,+Sirimau,+Kota+Ambon,+Maluku/@-3.6865107,128.2019325,16z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce91e71f27f55:0xf44cedb1ae89bb7!2sSMK+Kesehatan+Trimurti+Husada+Ambon!8m2!3d-3.6929667!4d128.2017933!16s%2Fg%2F11vd3vgqyy!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce91e71f27f55:0xf44cedb1ae89bb7!2m2!1d128.2017933!2d-3.6929667?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "B",
+        "jurusan": ["Asisten Keperawatan", "Teknologi Laboratorium Medik"],
+        "fasilitas": [
+            "15 Ruang Kelas",
+            "1 Perpustakaan", "2 Fasilitas Sanitasi", "2 Ruang Praktik Kejuruan"
+        ]
+    },
+    {
+        "id": "smk-4",
+        "name": "SMK Al Wathan Ambon",
+        "npsn": "60102778",
+        "type": "SMK",
+        "jenis": "Swasta",
+        "address": "Jl. Al wathan, Gunung Malintang, Kec. Sirimau, Kota Ambon, Maluku.",
+        "kecamatan": "Sirimau",
+        "image": "https://tse2.mm.bing.net/th?id=OIP.RTQlztK5scXuxDAN6Fq-kQAAAA&pid=Api&P=0&h=220",
+        "email": "smk.alwathan.amq@gmail.com",
+        "website": "http://www.smkalwathan.sch.id",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.6027671273273!2d128.20493157584013!3d-3.6775113962964703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce95d6971b0d5%3A0xe4a6ac3182fe1f5c!2sSmk%20Al-Wathan%20Ambon!5e0!3m2!1sid!2sid!4v1749831373978!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795076,128.2085623/86C5%2BX2R+Smk+Al-Wathan+Ambon,+Batu+Merah,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.6791776,128.2058613,18z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce95d6971b0d5:0xe4a6ac3182fe1f5c!2sSmk+Al-Wathan+Ambon!8m2!3d-3.6775114!4d128.2075065!16s%2Fg%2F11f668l2lv!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce95d6971b0d5:0xe4a6ac3182fe1f5c!2m2!1d128.207581!2d-3.6775609?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "A",
+        "jurusan": ["Asisten Keperawatan", "Desain Grafika", "Farmasi Klinis & Komunitas", "Nautika Kapal Penangkap Ikan"],
+        "fasilitas": [
+            "14 Ruang Kelas",
+            "1 Perpustakaan", "2 Fasilitas Sanitasi"
+        ]
+    },
+    {
+        "id": "smk-5",
+        "name": "SMK Negeri 1 Ambon",
+        "npsn": "60102001",
+        "type": "SMK",
+        "jenis": "Negeri",
+        "address": "Jl. Pitu Ina, Amantelu, Karang Panjang, Kec. Sirimau, Kota Ambon, Maluku.",
+        "kecamatan": "Sirimau",
+        "image": "https://tse1.mm.bing.net/th?id=OIP.dXoqNJtcebxpvsDJAhfHewHaHa&pid=Api&P=0&h=220",
+        "email": "smknegeri1ambon.sch.id@yahoo.com",
+        "website": "https://www.smknegeri1ambon.sch.id/",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.537888032577!2d128.1908240758403!3d-3.6920086962819783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce9ad48154489%3A0x4547c1176fedb580!2sJl.%20Pitu%20Ina%2C%20Kec.%20Sirimau%2C%20Kota%20Ambon%2C%20Maluku!5e0!3m2!1sid!2sid!4v1749831931289!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6795076,128.2085623/Jl.+Pitu+Ina,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.6860865,128.1930337,16z/data=!3m1!4b1!4m18!1m8!3m7!1s0x2d6ce9ad48154489:0x4547c1176fedb580!2sJl.+Pitu+Ina,+Kec.+Sirimau,+Kota+Ambon,+Maluku!3b1!8m2!3d-3.6920087!4d128.193399!16s%2Fg%2F1ptxg314h!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce9ad48154489:0x4547c1176fedb580!2m2!1d128.193399!2d-3.6920087?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "A",
+        "jurusan": ["Akuntansi & Keungan Lembaga", "Bisni Daring & Pemasaran", "Otomatisasi & Tata Kelola Perkantotran", "Perbankan & Keuangan Mikro", "Usaha Perjalanan wisata"],
+        "fasilitas": ["23 Ruang Kelas", "2 Laboratorium", "1 Perpustakaan", "2 Fasilitas Sanitasi", " Beberapa Ruang Praktik: Komputer, TKR, Tata Boga, BDP", "1 GOR & Lapangan Olahraga", "1 Kantin sekolah"]
+    },
+    {
+        "id": "ma-1",
+        "name": "MA Negeri 1 Ambon",
+        "npsn": "60105600",
+        "type": "MA",
+        "jenis": "Negeri",
+        "address": "Jl. Wara Puncak, Air Kuning, Kec. Sirimau, Kota Ambon, Maluku.",
+        "kecamatan": "Sirimau",
+        "image": "https://tse1.mm.bing.net/th?id=OIP.M8nQqOH4v0GfeIJ0LTPeHQHaHD&pid=Api&P=0&h=220",
+        "email": "-",
+        "website": "https://manoneambon.sch.id/",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7963.160659168683!2d128.1956446446657!3d-3.6825315351657744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce96d7596e71d%3A0xa8cc4f8ed12b1a43!2sMAN%201%20Ambon!5e0!3m2!1sid!2sid!4v1749878026506!5m2!1sid!2sid",
+        "routeLink": "https://www.google.com/maps/dir/-3.6474127,128.1933767/86F7%2BCGX+MAN+1+Ambon,+Jl.+Puncak,+Jl.+Wara+Jl.+Raya+Air+Kuning,+Batu+Merah,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.6649496,128.184733,14z/data=!3m1!4b1!4m18!1m8!3m7!1s0x2d6ce96d7596e71d:0xa8cc4f8ed12b1a43!2sMAN+1+Ambon!8m2!3d-3.6763969!4d128.2138694!15sCgltYW4gYW1ib26SAQZzY2hvb2yqATEQATIeEAEiGgOjJaS3b6dB1PksDKSg1cYepwtdQtTmNB9PMg0QAiIJbWFuIGFtYm9u4AEA!16s%2Fg%2F11bv1c5s_y!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce96d7596e71d:0xa8cc4f8ed12b1a43!2m2!1d128.2138694!2d-3.6763969?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D",
+        "akreditasi": "A",
+        "jurusan": ["MIPA", "IPS"],
+        "fasilitas": [
+            "15 Ruang Kelas",
+            "1 Aula",
+            "1 Laboratorium & Keterampilan",
+            "1 Perpustakaan"
+        ]
+    }
+]
