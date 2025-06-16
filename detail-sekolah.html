@@ -9,8 +9,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="preload" href="data/data.json" as="fetch" crossorigin="anonymous">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="data/data.json"
+      as="fetch"
+      crossorigin="anonymous"
+    />
     <style>
       .bg-gradient-indigo-pink {
         background: linear-gradient(to right, #6366f1, #ec4899);
@@ -34,6 +42,31 @@
       }
       ::-webkit-scrollbar-thumb:hover {
         background: #94a3b8;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .glass-effect {
+        backdrop-filter: blur(16px);
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .map-card {
+        transition: all 0.3s ease;
+      }
+      .map-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .carousel-container {
+        height: 400px;
+      }
+      @media (max-width: 768px) {
+        .carousel-container {
+          height: 250px;
+        }
       }
     </style>
   </head>
@@ -92,7 +125,6 @@
               <a
                 href="index.html"
                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-1 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                
                 ><i class="fas fa-home mr-2"></i> Home</a
               >
             </li>
@@ -116,251 +148,403 @@
       </div>
     </nav>
 
-    <main class="max-w-screen-xl mx-auto px-4 py-8 md:py-12">
+    <main class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+      <!-- Back Button -->
       <a
         href="sekolah.html"
-        class="inline-flex items-center px-4 py-2 text-indigo-600 hover:text-indigo-800 mb-8 transition-colors"
+        class="inline-flex items-center px-6 py-3 text-indigo-600 hover:text-white hover:bg-indigo-600 mb-8 transition-all duration-300 rounded-lg border border-indigo-200 hover:border-indigo-600"
       >
         <i class="fas fa-arrow-left mr-2"></i>
         Kembali ke Daftar Sekolah
       </a>
+
+      <!-- Main Container -->
       <div
         id="school-detail-container"
-        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6 md:p-8"
+        class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden"
       >
-        <h2
-          id="school-name"
-          class="text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-white mb-4"
-        ></h2>
-        <p
-          id="school-type"
-          class="text-sm font-semibold mb-6 px-2 py-1 rounded-full self-start"
-        ></p>
-
-        <div
-          id="default-carousel"
-          class="relative w-full mb-8"
-          data-carousel="static"
-        >
-          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                id="school-image"
-                src=""
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover h-full"
-                alt="School Image"
-              />
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="https://via.placeholder.com/1200x600/CCD1D7/5B798F?text=Fasilitas+Sekolah"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover h-full"
-                alt="School Facility"
-              />
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="https://via.placeholder.com/1200x600/C5D8EE/428CD7?text=Lingkungan+Sekolah"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover h-full"
-                alt="School Environment"
-              />
-            </div>
-          </div>
-          <div
-            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
-          >
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="true"
-              aria-label="Slide 1"
-              data-carousel-slide-to="0"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 2"
-              data-carousel-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 3"
-              data-carousel-slide-to="2"
-            ></button>
-          </div>
-          <button
-            type="button"
-            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev
-          >
+        <!-- Header Section -->
+        <div class="gradient-bg px-8 py-10 text-white">
+          <h1 id="school-name" class="text-4xl lg:text-5xl font-bold mb-4"></h1>
+          <div class="flex items-center space-x-4">
             <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-            >
-              <svg
-                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 1 1 5l4 4"
-                />
-              </svg>
-              <span class="sr-only">Previous</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next
-          >
-            <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-            >
-              <svg
-                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m1 9 4-4-4-4"
-                />
-              </svg>
-              <span class="sr-only">Next</span>
-            </span>
-          </button>
+              id="school-type"
+              class="px-4 py-2 bg-white/20 rounded-full text-sm font-semibold backdrop-blur-sm"
+            ></span>
+            <!-- <div class="flex items-center">
+              <i class="fas fa-star text-yellow-300 mr-1"></i><span class="mr-2">Akreditasi </span>
+              <span id="school-akreditasi" class="font-medium"></span>
+            </div> -->
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          <div>
-            <h3
-              class="text-xl font-semibold text-gray-900 dark:text-white mb-3"
-            >
-              Informasi Umum
-            </h3>
-            <p class="text-gray-700 dark:text-gray-300 mb-2">
-              <strong class="font-medium">NPSN:</strong>
-              <span id="school-npsn"></span>
-            </p>
-            <p class="text-gray-700 dark:text-gray-300 mb-2">
-              <strong class="font-medium">Jenis:</strong>
-              <span id="school-jenis"></span>
-            </p>
-            <p class="text-gray-700 dark:text-gray-300 mb-2">
-              <strong class="font-medium">Email:</strong>
-              <span id="school-email"></span>
-            </p>
-            <p class="text-gray-700 dark:text-gray-300 mb-2">
-              <strong class="font-medium">Alamat:</strong>
-              <span id="school-address"></span>
-            </p>
-            <p class="text-gray-700 dark:text-gray-300 mb-2">
-              <strong class="font-medium">Akreditasi:</strong>
-              <span id="school-akreditasi"></span>
-            </p>
-            <p class="text-gray-700 dark:text-gray-300 mb-4">
-              <strong class="font-medium">Situs Resmi:</strong>
-              <a
-                id="school-website"
-                href="#"
-                target="_blank"
-                class="text-blue-600 hover:underline dark:text-blue-400"
-              ></a>
-            </p>
-
-            <div id="school-jurusan-section" class="mb-4 hidden">
-              <h4
-                class="text-lg font-semibold text-gray-900 dark:text-white mb-2"
-              >
-                Jurusan
-              </h4>
-              <ul
-                id="school-jurusan"
-                class="list-disc list-inside text-gray-700 dark:text-gray-300"
-              ></ul>
+        <!-- Carousel Section -->
+        <div class="px-3 py-2 md:px-12 md:py-8">
+          <div
+            id="default-carousel"
+            class="relative w-full carousel-container mb-8"
+            data-carousel="static"
+          >
+            <div class="relative h-full overflow-hidden rounded-xl">
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  id="school-image"
+                  src=""
+                  class="absolute block w-full h-full object-cover"
+                  alt="School Image"
+                />
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="https://th.bing.com/th/id/OIP.nPMqFUJAlXbXqCqy9HBhZAHaEK?rs=1&pid=ImgDetMain"
+                  class="absolute block w-full h-full object-cover"
+                  alt="School Facility"
+                />
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="https://th.bing.com/th/id/OIP.A-x9uVf0_917OGu5sJDKfAHaDe?rs=1&pid=ImgDetMain"
+                  class="absolute block w-full h-full object-cover"
+                  alt="School Environment"
+                />
+              </div>
             </div>
 
-            <h4
-              class="text-lg font-semibold text-gray-900 dark:text-white mb-2"
+            <!-- Carousel Indicators -->
+            <div
+              class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3"
             >
-              Fasilitas
-            </h4>
-            <ul
-              id="school-fasilitas"
-              class="list-disc list-inside text-gray-700 dark:text-gray-300"
-            ></ul>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all"
+                aria-current="true"
+                data-carousel-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all"
+                data-carousel-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all"
+                data-carousel-slide-to="2"
+              ></button>
+            </div>
 
-            <h4
-              class="text-lg font-semibold text-gray-900 dark:text-white mt-4 mb-2"
+            <!-- Previous Button -->
+            <button
+              type="button"
+              class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev
             >
-              Ekstrakurikuler
-            </h4>
-            <ul
-              id="school-ekskul"
-              class="list-disc list-inside text-gray-700 dark:text-gray-300"
-            ></ul>
+              <span
+                class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none transition-all"
+              >
+                <svg
+                  class="w-5 h-5 text-white dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+
+            <!-- Next Button -->
+            <button
+              type="button"
+              class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none transition-all"
+              >
+                <svg
+                  class="w-5 h-5 text-white dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="px-3 py-2 md:px-12 md:py-8 pb-8">
+          <!-- Description -->
+          <div class="mb-8">
+            <h2
+              class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center"
+            >
+              <i class="fas fa-info-circle text-indigo-500 mr-3"></i>
+              Deskripsi Sekolah
+            </h2>
+            <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-6">
+              <p
+                id="school-description"
+                class="text-gray-700 dark:text-gray-300 leading-relaxed"
+              ></p>
+            </div>
           </div>
 
-          <div>
-            <h3
-              class="text-xl font-semibold text-gray-900 dark:text-white mb-3"
-            >
-              Lokasi Sekolah
-            </h3>
-            <div
-              id="school-map"
-              class="w-full h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden shadow-md mb-4"
-            >
-              <iframe
-                width="100%"
-                height="100%"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                src=""
-              ></iframe>
+          <!-- Main Content Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column - General Information -->
+            <div class="lg:col-span-2 space-y-6">
+              <!-- General Info Card -->
+              <div
+                class="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 rounded-xl p-6 border border-blue-100 dark:border-gray-600"
+              >
+                <h3
+                  class="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center"
+                >
+                  <i class="fas fa-school text-indigo-500 mr-3"></i>
+                  Informasi Umum
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div
+                    class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm"
+                  >
+                    <div class="flex items-center mb-2">
+                      <i class="fas fa-id-card text-gray-400 mr-2"></i>
+                      <span
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                        >NPSN</span
+                      >
+                    </div>
+                    <span
+                      id="school-npsn"
+                      class="text-lg font-semibold text-gray-900 dark:text-white"
+                    ></span>
+                  </div>
+                  <div
+                    class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm"
+                  >
+                    <div class="flex items-center mb-2">
+                      <i class="fas fa-building text-gray-400 mr-2"></i>
+                      <span
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                        >Jenis</span
+                      >
+                    </div>
+                    <span
+                      id="school-jenis"
+                      class="text-lg font-semibold text-gray-900 dark:text-white"
+                    ></span>
+                  </div>
+                  <div
+                    class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm detail-item"
+                  >
+                    <div class="flex items-center mb-2">
+                      <i class="fas fa-envelope text-gray-400 mr-2"></i>
+                      <span
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                        >Email</span
+                      >
+                    </div>
+                    <span
+                      id="school-email"
+                      class="text-sm text-blue-600 dark:text-blue-400 break-all"
+                    ></span>
+                  </div>
+                  <div
+                    class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm"
+                  >
+                    <div class="flex items-center mb-2">
+                      <i class="fas fa-medal text-gray-400 mr-2"></i>
+                      <span
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                        >Akreditasi</span
+                      >
+                    </div>
+                    <span
+                      id="school-akreditasi"
+                      class="text-lg font-semibold text-gray-900 dark:text-white"
+                    ></span>
+                  </div>
+                </div>
+
+                <!-- Address, Website, and Phone -->
+                <div class="mt-4 space-y-4">
+                  <div
+                    class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm"
+                  >
+                    <div class="flex items-center mb-2">
+                      <i class="fas fa-map-marker-alt text-gray-400 mr-2"></i>
+                      <span
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                        >Alamat</span
+                      >
+                    </div>
+                    <span
+                      id="school-address"
+                      class="text-gray-700 dark:text-gray-300"
+                    ></span>
+                  </div>
+                  <div
+                    class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm detail-item"
+                  >
+                    <div class="flex items-center mb-2">
+                      <i class="fas fa-globe text-gray-400 mr-2"></i>
+                      <span
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                        >Situs Resmi</span
+                      >
+                    </div>
+                    <a
+                      id="school-website"
+                      href="#"
+                      target="_blank"
+                      class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                    ></a>
+                  </div>
+                  <div
+                    class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm detail-item"
+                  >
+                    <div class="flex items-center mb-2">
+                      <i class="fas fa-phone text-gray-400 mr-2"></i>
+                      <span
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                        >Telepon</span
+                      >
+                    </div>
+                    <span
+                      id="school-phone"
+                      class="text-gray-700 dark:text-gray-300"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Jurusan Section -->
+              <div
+                id="school-jurusan-section"
+                class="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-gray-700 dark:to-gray-600 rounded-xl p-6 border border-green-100 dark:border-gray-600 hidden"
+              >
+                <h3
+                  class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center"
+                >
+                  <i class="fas fa-graduation-cap text-green-500 mr-3"></i>
+                  Jurusan
+                </h3>
+                <ul
+                  id="school-jurusan"
+                  class="grid grid-cols-1 md:grid-cols-2 gap-2 list-disc list-inside text-gray-700 dark:text-gray-300"
+                ></ul>
+              </div>
+
+              <!-- Features Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Fasilitas -->
+                <div
+                  class="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-700 dark:to-gray-600 rounded-xl p-6 border border-purple-100 dark:border-gray-600"
+                >
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center"
+                  >
+                    <i class="fas fa-tools text-purple-500 mr-3"></i>
+                    Fasilitas
+                  </h3>
+                  <ul
+                    id="school-fasilitas"
+                    class="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300"
+                  ></ul>
+                </div>
+
+                <!-- Ekstrakurikuler -->
+                <div
+                  class="bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-700 dark:to-gray-600 rounded-xl p-6 border border-orange-100 dark:border-gray-600"
+                >
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center"
+                  >
+                    <i class="fas fa-users text-orange-500 mr-3"></i>
+                    Ekstrakurikuler
+                  </h3>
+                  <ul
+                    id="school-ekskul"
+                    class="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300"
+                  ></ul>
+                </div>
+              </div>
             </div>
-            <a
-              id="school-route-btn"
-              href="#"
-              target="_blank"
-              class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-gradient-indigo-pink hover:opacity-90 transition-all duration-300 ease-in-out w-full text-center"
-            >
-              <i class="fas fa-directions mr-2"></i>
-              Dapatkan Rute
-            </a>
+
+            <!-- Right Column - Map -->
+            <div class="lg:col-span-1">
+              <div
+                class="map-card bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 sticky top-8"
+              >
+                <h3
+                  class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center"
+                >
+                  <i class="fas fa-map text-blue-500 mr-3"></i>
+                  Lokasi Sekolah
+                </h3>
+                <div
+                  id="school-map"
+                  class="w-full h-64 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden shadow-md mb-4"
+                >
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src=""
+                  ></iframe>
+                </div>
+                <a
+                  id="school-route-btn"
+                  href="#"
+                  target="_blank"
+                  class="inline-flex items-center justify-center px-2 py-2 border border-transparent text-base font-medium rounded-lg text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 ease-in-out w-full text-center transform hover:scale-105"
+                >
+                  <i class="fas fa-directions mr-2"></i>
+                  Dapatkan Rute
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Not Found Section -->
       <div id="not-found" class="hidden text-center py-12">
-        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-          Sekolah Tidak Ditemukan
-        </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-400">
-          Informasi sekolah yang Anda cari tidak tersedia.
-        </p>
-        <a
-          href="sekolah.html"
-          class="mt-6 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-gradient-indigo-pink hover:opacity-90 transition-all duration-300"
-        >
-          Kembali ke Daftar Sekolah
-        </a>
+        <div class="max-w-md mx-auto">
+          <i class="fas fa-search text-gray-400 text-6xl mb-6"></i>
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            Sekolah Tidak Ditemukan
+          </h2>
+          <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+            Informasi sekolah yang Anda cari tidak tersedia.
+          </p>
+          <a
+            href="sekolah.html"
+            class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+          >
+            <i class="fas fa-arrow-left mr-2"></i>
+            Kembali ke Daftar Sekolah
+          </a>
+        </div>
       </div>
     </main>
 
@@ -374,5 +558,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="js/detail-sekolah.js"></script>
+
   </body>
 </html>

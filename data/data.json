@@ -16,8 +16,11 @@
         "jurusan": ["MIPA", "IPS"],
         "fasilitas": [
             "15 Ruang Kelas",
-            "1 Perpustakaan", "2 Laboratorium", "4 Fasilitas Sanitasi"
-        ]
+            "1 Perpustakaan", 
+            "2 Laboratorium", 
+            "4 Fasilitas Sanitasi"
+        ],
+        "deskripsi": "SMA XAVERIUS AMBON merupakan salah satu sekolah jenjang SMA berstatus Swasta yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMA XAVERIUS AMBON didirikan pada tanggal 23 April 1960 dengan Nomor SK Pendirian 13/60 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 378 siswa ini dibimbing oleh 35 guru yang profesional di bidangnya."
     },
     {
         "id": "sma-2",
@@ -36,8 +39,11 @@
         "jurusan": ["MIPA", "IPS"],
         "fasilitas": [
             "22 Ruang Kelas",
-            "1 Perpustakaan", "2 Laboratorium", "2 Fasilitas Sanitasi"
-        ]
+            "1 Perpustakaan", 
+            "2 Laboratorium", 
+            "2 Fasilitas Sanitasi"
+        ],
+        "deskripsi": "SMAN 11 AMBON merupakan salah satu sekolah jenjang SMA berstatus Negeri yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMAN 11 AMBON didirikan pada tanggal 1 Januari 1970 dengan Nomor SK Pendirian 254 TAHUN 2004 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 880 siswa ini dibimbing oleh 81 guru yang profesional di bidangnya."
     },
     {
         "id": "sma-3",
@@ -55,8 +61,11 @@
         "akreditasi": "B",
         "jurusan": ["Jurusan Umum"],
         "fasilitas": [
-            "6 Ruang Kelas", "1 Laboratorium", "Fasilitas Sanitasi"
-        ]
+            "6 Ruang Kelas", 
+            "1 Laboratorium", 
+            "Fasilitas Sanitasi"
+        ],
+        "deskripsi": "SMA KR KALAM KUDUS merupakan salah satu sekolah jenjang SMA berstatus Swasta yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMA KR KALAM KUDUS didirikan pada tanggal 5 November 2012 dengan Nomor SK Pendirian Nomor:640/0364/IMB/KPP/XI/2012 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 74 siswa ini dibimbing oleh 15 guru yang profesional di bidangnya."
     },
     {
         "id": "sma-4",
@@ -68,15 +77,18 @@
         "kecamatan": "Sirimau",
         "image": "https://siwalimanews.com/wp-content/uploads/2022/07/sman-13-1.gif",
         "email": "sma13.ambon@gmail.com",
-        "website": "",
+        "website": "https://smanegeri13ambon.sch.id/",
         "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.6132727280274!2d128.188912584699!3d-3.6751585367556516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce91c40592841%3A0xd7bf76318b9867bf!2sPandan%20Kasturi%2C%20Kec.%20Sirimau%2C%20Kota%20Ambon%2C%20Maluku!5e0!3m2!1sid!2sid!4v1749817252530!5m2!1sid!2sid",
         "routeLink": "https://www.google.com/maps/dir/-3.6795303,128.2085442/Pandan+Kasturi,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.6750027,128.1949775,16z/data=!3m1!4b1!4m18!1m8!3m7!1s0x2d6ce91c40592841:0xd7bf76318b9867bf!2sPandan+Kasturi,+Kec.+Sirimau,+Kota+Ambon,+Maluku!3b1!8m2!3d-3.6750695!4d128.1939378!16s%2Fg%2F120rs1qd!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce91c40592841:0xd7bf76318b9867bf!2m2!1d128.1939378!2d-3.6750695?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
         "akreditasi": "A",
         "jurusan": ["MIPA", "IPS"],
         "fasilitas": [
             "28 Ruang Kelas",
-            "1 Perpustkaan", "1 Laboratorium", "1 Lapangan Olahraga"
-        ]
+            "1 Perpustkaan", 
+            "1 Laboratorium", 
+            "1 Lapangan Olahraga"
+        ],
+        "deskripsi": "SMAN 13 AMBON merupakan salah satu sekolah jenjang SMA berstatus Negeri yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMAN 13 AMBON didirikan pada tanggal 1 Januari 1970 dengan Nomor SK Pendirian 924 TAHUN 2005 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 1038 siswa ini dibimbing oleh 90 guru yang profesional di bidangnya."
     },
     {
         "id": "sma-5",
@@ -84,7 +96,7 @@
         "npsn": "60103930",
         "type": "SMA",
         "jenis": "Swasta",
-        "address": "Jl. Anthoni Rebook, Surabaya",
+        "address": "Jl, Anthoni Rhebook, Kecamatan Sirimau, Kota Ambon, Maluku.",
         "kecamatan": "Sirimau",
         "image": "https://kfmap.asia/storage/thumbs/storage/photos/ID.AMB.PS.AHSMA/ID.AMB.PS.AHSMA_1.jpeg",
         "email": "smaalhilaal@yahoo.co.id",
@@ -95,8 +107,11 @@
         "jurusan": ["MIPA", "IPS"],
         "fasilitas": [
             "4 Ruang Kelas",
-            "1 Perpustakaan", "1 Laboratorium", "2 Fasilitas Sanitasi"
-        ]
+            "1 Perpustakaan", 
+            "1 Laboratorium", 
+            "2 Fasilitas Sanitasi"
+        ],
+        "deskripsi": "SMA AL HILAAL AMBON merupakan salah satu sekolah jenjang SMA berstatus Swasta yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMA AL HILAAL AMBON didirikan pada tanggal 1 Januari 2012 dengan Nomor SK Pendirian 13 TAHUN 2012 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 39 siswa ini dibimbing oleh 17 guru yang profesional di bidangnya."
     },
     {
         "id": "sma-6",
@@ -115,8 +130,11 @@
         "jurusan": ["Jurusan Umum"],
         "fasilitas": [
             "11 Ruang Kelas",
-            "1 Perpustakaan", "1 Laboratorium", "3 Fasilitas Sanitasi"
-        ]
+            "1 Perpustakaan", 
+            "1 Laboratorium", 
+            "3 Fasilitas Sanitasi"
+        ],
+        "deskripsi": "SMA PGRI 1 AMBON merupakan salah satu sekolah jenjang SMA berstatus Swasta yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMA PGRI 1 AMBON didirikan pada tanggal 24 November 1987 dengan Nomor SK Pendirian 32 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 316 siswa ini dibimbing oleh 39 guru yang profesional di bidangnya."
     },
     {
         "id": "sma-7",
@@ -128,15 +146,18 @@
         "kecamatan": "Sirimau",
         "image": "https://yt3.googleusercontent.com/0DPw4jYIi83_dGpXqAxQRMG1VWh1Hk6z1ltHlYivLNJCnNitSUORhbiKNT0bP-dK85qoH4Q4Yg=s900-c-k-c0x00ffffff-no-rj",
         "email": "smanduambon@gmail.com",
-        "website": "www.sman1ambon.sch.id",
+        "website": "https://sman2ambon.sch.id/",
         "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.511749689508!2d128.18198887584012!3d-3.697833296276129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce9006620f0ed%3A0xbeb01638f6ee3f3f!2sSMA%20Negeri%202%20Ambon!5e0!3m2!1sid!2sid!4v1749830886068!5m2!1sid!2sid",
         "routeLink": "https://www.google.com/maps/dir/-3.6795061,128.2085448/852M%2BVV7+SMA+Negeri+2+Ambon,+Uritetu,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.688837,128.1862401,15z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce9006620f0ed:0xbeb01638f6ee3f3f!2sSMA+Negeri+2+Ambon!8m2!3d-3.6978333!4d128.1845638!16s%2Fg%2F122hcvqp!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce9006620f0ed:0xbeb01638f6ee3f3f!2m2!1d128.1845296!2d-3.6978586?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
         "akreditasi": "B",
         "jurusan": ["MIPA", "IPS"],
         "fasilitas": [
             "18 Ruang Kelas",
-            "1 Perpustakaan", "3 Laboratorium", "2 Fasilitas Sanitasi"
-        ]
+            "1 Perpustakaan", 
+            "3 Laboratorium", 
+            "2 Fasilitas Sanitasi"
+        ],
+        "deskripsi": "SMAN 2 AMBON merupakan salah satu sekolah jenjang SMA berstatus Negeri yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMAN 2 AMBON didirikan pada tanggal 1 Januari 1970 dengan Nomor SK Pendirian yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 1114 siswa ini dibimbing oleh 72 guru yang profesional di bidangnya."
     },
     {
         "id": "sma-8",
@@ -148,15 +169,22 @@
         "kecamatan": "Sirimau",
         "image": "https://mail.sman1ambon.sch.id/media_library/images/6603478c88385e7902caf898d8e555e0.png",
         "email": "terataismansa@yahoo.com",
-        "website": "www.sman1ambon.sch.id",
+        "website": "https://sman1ambon.sch.id/",
         "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.514547415295!2d128.18270374028006!3d-3.6972102962922575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce90041f05151%3A0xcfa423a32f5a134a!2sSMA%20Negeri%201%20Ambon!5e0!3m2!1sid!2sid!4v1749824748987!5m2!1sid!2sid",
         "routeLink": "https://www.google.com/maps/dir/-3.6795386,128.2085353/SMA+Negeri+1+Ambon,+Jl.+Pattimura+No.28,+Uritetu,+Sirimau,+Kota+Ambon,+Maluku/@-3.6878188,128.1759113,14z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce90041f05151:0xcfa423a32f5a134a!2sSMA+Negeri+1+Ambon!8m2!3d-3.6972103!4d128.1852733!16s%2Fg%2F122jkppm!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce90041f05151:0xcfa423a32f5a134a!2m2!1d128.1852713!2d-3.6972116?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
         "akreditasi": "A",
         "jurusan": ["MIPA", "IPS", "Bahasa"],
         "fasilitas": [
             "25 Ruang Kelas",
-            "1 Perpustakaan", "4 Laboratorium", "1 Fasilitas sanitasi", "Beberapa Ruang Praktik", "Lapangan Olahraga", "Mushola", "Kantin"
-        ]
+            "1 Perpustakaan", 
+            "4 Laboratorium", 
+            "1 Fasilitas sanitasi", 
+            "Beberapa Ruang Praktik", 
+            "Lapangan Olahraga", 
+            "Mushola", 
+            "Kantin"
+        ],
+        "deskripsi": "SMAN 1 AMBON merupakan salah satu sekolah jenjang SMA berstatus Negeri yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMAN 1 AMBON didirikan pada tanggal 1 Januari 1970 dengan Nomor SK Pendirian yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 1160 siswa ini dibimbing oleh 59 guru yang profesional di bidangnya."
     },
     {
         "id": "sma-9",
@@ -175,8 +203,11 @@
         "jurusan": ["Peminatan & Proyek"],
         "fasilitas": [
             "14 Ruang Kelas",
-            "1 Perpustakaan", "3 Laboratorium", "2 Fasilitas Sanitasi"
-        ]
+            "1 Perpustakaan", 
+            "3 Laboratorium", 
+            "2 Fasilitas Sanitasi"
+        ],
+        "deskripsi": "SMA KRISTEN YPKPM merupakan salah satu sekolah jenjang SMA berstatus Swasta yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMA KRISTEN YPKPM didirikan pada tanggal 25 Juli 1984 dengan Nomor SK Pendirian 105/I 17.1/Kpts/1984 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 500 siswa ini dibimbing oleh 45 guru yang profesional di bidangnya."
     },
     {
         "id": "sma-10",
@@ -195,8 +226,11 @@
         "jurusan": ["MIPA", "IPS"],
         "fasilitas": [
             "6 Ruang Kelas",
-            "1 Perpustakaan", "1 Laboratorium","2 Fasilitas Sanitasi"
-        ]
+            "1 Perpustakaan", 
+            "1 Laboratorium",
+            "2 Fasilitas Sanitasi"
+        ],
+        "deskripsi": "SMA NEGERI 15 AMBON merupakan salah satu sekolah jenjang SMA berstatus Negeri yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMA NEGERI 15 AMBON didirikan pada tanggal 17 Juni 2015 dengan Nomor SK Pendirian 415 TAHUN 2015 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 180 siswa ini dibimbing oleh 21 guru yang profesional di bidangnya."
     },
     {
         "id": "smk-1",
@@ -207,16 +241,20 @@
         "address": "Jl. KH Ahmad Dahlan RT. 001/19, Batu Merah, Kec. Sirimau, Kota Ambon, Maluku.",
         "kecamatan": "Sirimau",
         "image": "https://tse4.mm.bing.net/th?id=OIP.Zxt_KIlddIAk9yPShQ8NWgHaFj&pid=Api&P=0&h=220",
-        "email": "sma_muhammadiyahamq@yahoo.co.id",
-        "website": "http://www.esemka-muh-ambon.sch.id",
+        "email": "smk.muhamq@yahoo.co.id",
+        "website": "https://esemka-muh-ambon.sch.id",
         "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.5933093562076!2d128.21386587583993!3d-3.67962829629438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce9716285eac7%3A0xb6f56c0b5d188d7c!2sSMK%20Muhammadiyah%20Ambon!5e0!3m2!1sid!2sid!4v1749819924051!5m2!1sid!2sid",
         "routeLink": "https://www.google.com/maps/dir/-3.6795386,128.2085353/SMK+Muhammadiyah+Ambon,+Batu+Merah,+Sirimau,+Kota+Ambon,+Maluku/@-3.6809715,128.209664,17z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce9716285eac7:0xb6f56c0b5d188d7c!2sSMK+Muhammadiyah+Ambon!8m2!3d-3.6796283!4d128.2164408!16s%2Fg%2F11fy_frw7t!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce9716285eac7:0xb6f56c0b5d188d7c!2m2!1d128.2164753!2d-3.6796513?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
         "akreditasi": "A",
         "jurusan": ["Akuntansi & Keuangan Lembaga", "Desain Pemodelan & Informasi Bangunan", "Teknik Instalasi Tenaga Listrik", "Teknik Jaringan Komputer & Telekomunikasi","Teknik Ketenagalistrikan", "Teknik Komputer & Jaringan"],
         "fasilitas": [
             "16 Ruang Kelas",
-            "1 Perpustakaan", "2 Laboratorim", "2 Fasilitas Sanitasi", "3 Ruang Kejuruan"
-        ]
+            "1 Perpustakaan", 
+            "2 Laboratorim",
+            "2 Fasilitas Sanitasi",
+            "3 Ruang Kejuruan"
+        ],
+        "deskripsi": "SMK MUHAMMADIYAH AMBON merupakan salah satu sekolah jenjang SMK berstatus Swasta yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMK MUHAMMADIYAH AMBON didirikan pada tanggal 3 Agustus 2002 dengan Nomor SK Pendirian 203 Tahun 2002 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 425 siswa ini dibimbing oleh 36 guru yang profesional di bidangnya."
     },
     {
         "id": "smk-2",
@@ -228,15 +266,17 @@
         "kecamatan": "Sirimau",
         "image": "https://tse3.mm.bing.net/th?id=OIP.wlCLt2Ix-4C4ShZqsayyrgHaHa&pid=Api&P=0&h=220",
         "email": "smkjayanegaraamq@gmail.com",
-        "website": "http://www.smkjayanegaraamq.sch.id",
+        "website": "https://smkjayanegaraamq.sch.id",
         "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.617172300264!2d128.1902621758402!3d-3.674284796299719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce91c3a0bc3c5%3A0xb49f57c5aef52706!2sSMK%20Jaya%20Negara%20Ambon!5e0!3m2!1sid!2sid!4v1749831254301!5m2!1sid!2sid",
         "routeLink": "https://www.google.com/maps/dir/-3.6795076,128.2085623/SMK+Jaya+Negara+Ambon,+Jl.+Pandan+Kasturi+No.II,+Pandan+Kasturi,+Kec.+Sirimau,+Kota+Ambon,+Maluku+97128/@-3.6750027,128.1949775,16z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce91c3a0bc3c5:0xb49f57c5aef52706!2sSMK+Jaya+Negara+Ambon!8m2!3d-3.6742848!4d128.1928371!16s%2Fg%2F11g6wtlq9h!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce91c3a0bc3c5:0xb49f57c5aef52706!2m2!1d128.1928348!2d-3.6742869?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
         "akreditasi": "C",
         "jurusan": ["Teknik Jaringan & Komputer"],
         "fasilitas": [
             "3 Ruang Kelas",
-            "1 Perpustakaan", "2 Fasilitas Sanitasi"
-        ]
+            "1 Perpustakaan", 
+            "2 Fasilitas Sanitasi"
+        ],
+        "deskripsi": "SMK JAYANEGARA merupakan salah satu sekolah jenjang SMK berstatus Swasta yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMK JAYANEGARA didirikan pada tanggal 8 Januari 2007 dengan Nomor SK Pendirian 09.010/KEP/YPD-JN/I/2007 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 94 siswa ini dibimbing oleh 13 guru yang profesional di bidangnya."
     },
     {
         "id": "smk-3",
@@ -255,8 +295,11 @@
         "jurusan": ["Asisten Keperawatan", "Teknologi Laboratorium Medik"],
         "fasilitas": [
             "15 Ruang Kelas",
-            "1 Perpustakaan", "2 Fasilitas Sanitasi", "2 Ruang Praktik Kejuruan"
-        ]
+            "1 Perpustakaan", 
+            "2 Fasilitas Sanitasi", 
+            "2 Ruang Praktik Kejuruan"
+        ],
+        "deskripsi": "SMK KESEHATAN TRIMURTI HUSADA AMBON merupakan salah satu sekolah jenjang SMK berstatus Swasta yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMK KESEHATAN TRIMURTI HUSADA AMBON didirikan pada tanggal 26 November 2014 dengan Nomor SK Pendirian 658 tahun 2014 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 184 siswa ini dibimbing oleh 15 guru yang profesional di bidangnya."
     },
     {
         "id": "smk-4",
@@ -268,15 +311,17 @@
         "kecamatan": "Sirimau",
         "image": "https://tse2.mm.bing.net/th?id=OIP.RTQlztK5scXuxDAN6Fq-kQAAAA&pid=Api&P=0&h=220",
         "email": "smk.alwathan.amq@gmail.com",
-        "website": "http://www.smkalwathan.sch.id",
+        "website": "https://smkalwathan.sch.id",
         "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.6027671273273!2d128.20493157584013!3d-3.6775113962964703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce95d6971b0d5%3A0xe4a6ac3182fe1f5c!2sSmk%20Al-Wathan%20Ambon!5e0!3m2!1sid!2sid!4v1749831373978!5m2!1sid!2sid",
         "routeLink": "https://www.google.com/maps/dir/-3.6795076,128.2085623/86C5%2BX2R+Smk+Al-Wathan+Ambon,+Batu+Merah,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.6791776,128.2058613,18z/data=!3m1!4b1!4m17!1m7!3m6!1s0x2d6ce95d6971b0d5:0xe4a6ac3182fe1f5c!2sSmk+Al-Wathan+Ambon!8m2!3d-3.6775114!4d128.2075065!16s%2Fg%2F11f668l2lv!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce95d6971b0d5:0xe4a6ac3182fe1f5c!2m2!1d128.207581!2d-3.6775609?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
         "akreditasi": "A",
         "jurusan": ["Asisten Keperawatan", "Desain Grafika", "Farmasi Klinis & Komunitas", "Nautika Kapal Penangkap Ikan"],
         "fasilitas": [
             "14 Ruang Kelas",
-            "1 Perpustakaan", "2 Fasilitas Sanitasi"
-        ]
+            "1 Perpustakaan", 
+            "2 Fasilitas Sanitasi"
+        ],
+        "deskripsi": "SMK AL WATHAN AMBON merupakan salah satu sekolah jenjang SMK berstatus Swasta yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMK AL WATHAN AMBON didirikan pada tanggal 1 Januari 1901 dengan Nomor SK Pendirian 15 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 200 siswa ini dibimbing oleh 27 guru yang profesional di bidangnya."
     },
     {
         "id": "smk-5",
@@ -288,12 +333,21 @@
         "kecamatan": "Sirimau",
         "image": "https://tse1.mm.bing.net/th?id=OIP.dXoqNJtcebxpvsDJAhfHewHaHa&pid=Api&P=0&h=220",
         "email": "smknegeri1ambon.sch.id@yahoo.com",
-        "website": "https://www.smknegeri1ambon.sch.id/",
+        "website": "https://smknegeri1ambon.sch.id/",
         "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.537888032577!2d128.1908240758403!3d-3.6920086962819783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce9ad48154489%3A0x4547c1176fedb580!2sJl.%20Pitu%20Ina%2C%20Kec.%20Sirimau%2C%20Kota%20Ambon%2C%20Maluku!5e0!3m2!1sid!2sid!4v1749831931289!5m2!1sid!2sid",
         "routeLink": "https://www.google.com/maps/dir/-3.6795076,128.2085623/Jl.+Pitu+Ina,+Kec.+Sirimau,+Kota+Ambon,+Maluku/@-3.6860865,128.1930337,16z/data=!3m1!4b1!4m18!1m8!3m7!1s0x2d6ce9ad48154489:0x4547c1176fedb580!2sJl.+Pitu+Ina,+Kec.+Sirimau,+Kota+Ambon,+Maluku!3b1!8m2!3d-3.6920087!4d128.193399!16s%2Fg%2F1ptxg314h!4m8!1m1!4e1!1m5!1m1!1s0x2d6ce9ad48154489:0x4547c1176fedb580!2m2!1d128.193399!2d-3.6920087?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D",
         "akreditasi": "A",
         "jurusan": ["Akuntansi & Keungan Lembaga", "Bisni Daring & Pemasaran", "Otomatisasi & Tata Kelola Perkantotran", "Perbankan & Keuangan Mikro", "Usaha Perjalanan wisata"],
-        "fasilitas": ["23 Ruang Kelas", "2 Laboratorium", "1 Perpustakaan", "2 Fasilitas Sanitasi", " Beberapa Ruang Praktik: Komputer, TKR, Tata Boga, BDP", "1 GOR & Lapangan Olahraga", "1 Kantin sekolah"]
+        "fasilitas": [
+            "23 Ruang Kelas", 
+            "2 Laboratorium", 
+            "1 Perpustakaan", 
+            "2 Fasilitas Sanitasi", 
+            " Beberapa Ruang Praktik: Komputer, TKR, Tata Boga, BDP", 
+            "1 GOR & Lapangan Olahraga", 
+            "1 Kantin sekolah"
+        ],
+        "deskripsi": "SMKN 1 AMBON merupakan salah satu sekolah jenjang SMK berstatus Negeri yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. SMKN 1 AMBON didirikan pada tanggal 1 Januari 1970 dengan Nomor SK Pendirian 4574/B3/Kedj yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 902 siswa ini dibimbing oleh 64 guru yang profesional di bidangnya."
     },
     {
         "id": "ma-1",
@@ -315,6 +369,7 @@
             "1 Aula",
             "1 Laboratorium & Keterampilan",
             "1 Perpustakaan"
-        ]
+        ],
+        "deskripsi": "MAN AMBON merupakan salah satu sekolah jenjang MA berstatus Negeri yang berada di wilayah Kec. Sirimau, Kota Ambon, Maluku. MAN AMBON didirikan pada tanggal 17 November 2016 dengan Nomor SK Pendirian KMA No. 665 Tahun 2016 yang berada dalam naungan Kementerian Agama. Dalam kegiatan pembelajaran, sekolah yang memiliki 609 siswa ini dibimbing oleh guru-guru yang profesional di bidangnya."
     }
 ]

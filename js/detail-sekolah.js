@@ -24,11 +24,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   if (school) {
     // 1. Informasi Dasar Sekolah
+    document.getElementById("school-description").textContent = school.deskripsi || "Deskripsi tidak tersedia.";
     document.getElementById("school-name").textContent = school.name || "Nama Sekolah Tidak Tersedia";
 
     const schoolTypeElement = document.getElementById("school-type");
     schoolTypeElement.textContent = school.type || "Tipe Tidak Tersedia";
-    schoolTypeElement.className = "text-sm font-semibold mb-6 px-2 py-1 rounded-full self-start"; // Reset class
+    schoolTypeElement.className = "text-sm font-semibold px-2 py-1 rounded-full self-start"; // Reset class
 
     // Penentuan warna berdasarkan tipe sekolah
     switch (school.type) {
