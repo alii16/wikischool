@@ -393,13 +393,7 @@
   background-clip: text;
 }
 
-.school-image {
-  transition: transform 0.4s ease;
-}
 
-.enhanced-card:hover .school-image {
-  transform: scale(1.1);
-}
 
 #school-list {
     grid-auto-rows: 1fr;
