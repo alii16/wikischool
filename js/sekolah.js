@@ -2,6 +2,9 @@ let schools = [];
 let currentFilterJenjang = "all"; // Untuk filter jenjang (SMA, SMK, MA)
 let currentFilterKecamatan = "all"; // Untuk filter kecamatan
 let currentSearchTerm = "";
+// let currentPage = 1;
+// let showAll = false;
+// const cardsPerPage = 12;
 
 const schoolListContainer = document.getElementById("school-list");
 const noResultsMessage = document.getElementById("no-results");
@@ -65,11 +68,24 @@ function renderSchools() {
   document.getElementById("totalschool").textContent =
     filteredAndSearchedSchools.length + " sekolah ditemukan";
 
+  // PAGINATION
+  // const totalPages = Math.ceil(filteredAndSearchedSchools.length / cardsPerPage);
+  // if (currentPage > totalPages) currentPage = 1;
+  // const startIdx = (currentPage - 1) * cardsPerPage;
+  // const endIdx = startIdx + cardsPerPage;
+  // const schoolsToShow = filteredAndSearchedSchools.slice(startIdx, endIdx);
+
   if (filteredAndSearchedSchools.length === 0) {
     noResultsMessage.classList.remove("hidden");
   } else {
     noResultsMessage.classList.add("hidden");
     filteredAndSearchedSchools.forEach((school) => {
+      //untuk pagination, gunakan schoolsToShow
+  // if (schoolsToShow.length === 0) {
+  //   noResultsMessage.classList.remove("hidden");
+  // } else {
+  //   noResultsMessage.classList.add("hidden");
+  //   schoolsToShow.forEach((school) => {
       // (Markup card sekolah seperti sebelumnya)
       const imageUrl = school.image;
       let typeColorClass = "";
@@ -186,6 +202,74 @@ function renderSchools() {
       schoolListContainer.innerHTML += card;
     });
   }
+  // renderPagination(totalPages);
+}
+
+function renderPagination(totalPages) {
+  let paginationContainer = document.getElementById("pagination");
+  if (!paginationContainer) {
+    paginationContainer = document.createElement("div");
+    paginationContainer.id = "pagination";
+    paginationContainer.className = "flex justify-center items-center gap-2 pb-8";
+    schoolListContainer.parentNode.appendChild(paginationContainer);
+  }
+  paginationContainer.innerHTML = "";
+
+  if (totalPages <= 1) {
+    paginationContainer.style.display = "none";
+    return;
+  }
+  paginationContainer.style.display = "flex";
+
+  // Prev button
+  const prevBtn = document.createElement("button");
+  prevBtn.innerHTML = "&laquo;";
+  prevBtn.className = "px-3 py-2 rounded bg-gray-200 hover:bg-indigo-200 text-xs text-gray-700 font-bold";
+  prevBtn.disabled = currentPage === 1;
+  prevBtn.onclick = () => {
+    if (currentPage > 1) {
+      currentPage--;
+      renderSchools();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+  paginationContainer.appendChild(prevBtn);
+
+  // Page numbers (max 5 shown)
+  let startPage = Math.max(1, currentPage - 2);
+  let endPage = Math.min(totalPages, currentPage + 2);
+  if (currentPage <= 3) endPage = Math.min(5, totalPages);
+  if (currentPage >= totalPages - 2) startPage = Math.max(1, totalPages - 4);
+
+  for (let i = startPage; i <= endPage; i++) {
+    const pageBtn = document.createElement("button");
+    pageBtn.textContent = i;
+    pageBtn.className =
+      "px-3 py-2 rounded " +
+      (i === currentPage
+        ? "bg-green-100 text-green-700 text-xs font-bold"
+        : "bg-gray-200 hover:bg-indigo-200 text-xs text-gray-700");
+    pageBtn.onclick = () => {
+      currentPage = i;
+      renderSchools();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    paginationContainer.appendChild(pageBtn);
+  }
+
+  // Next button
+  const nextBtn = document.createElement("button");
+  nextBtn.innerHTML = "&raquo;";
+  nextBtn.className = "px-3 py-2 rounded bg-gray-200 hover:bg-indigo-200 text-gray-700 font-bold";
+  nextBtn.disabled = currentPage === totalPages;
+  nextBtn.onclick = () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      renderSchools();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+  paginationContainer.appendChild(nextBtn);
 }
 
 function generateSchoolCard(school) {
