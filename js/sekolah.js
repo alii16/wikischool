@@ -19,7 +19,7 @@ async function fetchSchoolsData() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     schools = await response.json();
-    populateKecamatanDropdown(); // Isi dropdown kecamatan setelah data dimuat
+    populateKecamatanDropdown();
     renderSchools();
   } catch (error) {
     console.error("Error fetching school data:", error);
