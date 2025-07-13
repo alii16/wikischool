@@ -1,6 +1,7 @@
 let schools = [];
 let currentFilterJenjang = "all"; // Untuk filter jenjang (SMA, SMK, MA)
 let currentFilterKecamatan = "all"; // Untuk filter kecamatan
+let currentFilterStatus = "all"; // Untuk filter status (negeri, swasta)
 let currentSearchTerm = "";
 // let currentPage = 1;
 // let showAll = false;
@@ -11,6 +12,7 @@ const noResultsMessage = document.getElementById("no-results");
 const searchInput = document.getElementById("school-search");
 const filterJenjangDropdown = document.getElementById("filter-jenjang");
 const filterKecamatanDropdown = document.getElementById("filter-kecamatan");
+const filterStatusDropdown = document.getElementById("filter-status");
 
 async function fetchSchoolsData() {
   try {
@@ -57,11 +59,14 @@ function renderSchools() {
       currentFilterKecamatan === "all" ||
       (school.kecamatan &&
         school.kecamatan.toLowerCase() === currentFilterKecamatan);
+    const matchesStatus =
+      currentFilterStatus === "all" ||
+      (school.jenis && school.jenis.toLowerCase() === currentFilterStatus);
     const matchesSearch = school.name
       .toLowerCase()
       .includes(currentSearchTerm.toLowerCase());
 
-    return matchesJenjang && matchesKecamatan && matchesSearch;
+    return matchesJenjang && matchesKecamatan && matchesStatus && matchesSearch;
   });
 
   // Update total sekolah
@@ -306,15 +311,23 @@ filterKecamatanDropdown.addEventListener("change", (event) => {
   renderSchools();
 });
 
+filterStatusDropdown.addEventListener("change", (event) => {
+  currentFilterStatus = event.target.value;
+  currentPage = 1;
+  renderSchools();
+});
+
 // Clear filters function
 function clearFilters() {
   currentFilterJenjang = "all";
   currentFilterKecamatan = "all";
+  currentFilterStatus = "all";
   currentSearchTerm = "";
 
   searchInput.value = "";
   filterJenjangDropdown.value = "all";
-  filterKecamatanDropdown.value = "all"; // Reset kecamatan dropdown
+  filterKecamatanDropdown.value = "all";
+  filterStatusDropdown.value = "all";
 
   renderSchools();
 }
