@@ -1151,5 +1151,41 @@
     "jurusan": [],
     "fasilitas": [],
     "deskripsi": "MAS AL-MABRUR merupakan salah satu sekolah jenjang MA berstatus Swasta yang berada di wilayah Kec. Teluk Ambon, Kota Ambon, Maluku. MAS AL-MABRUR didirikan pada tanggal 24 Maret 2011 dengan Nomor SK Pendirian KW.25.03/PP.02.3/4/01/2011 yang berada dalam naungan Kementerian Agama. Dalam kegiatan pembelajaran, sekolah yang memiliki 56 siswa ini dibimbing oleh guru-guru yang profesional di bidangnya. "
+  },
+    {
+    "id": "sma-32",
+    "name": "SMAN 8 AMBON",
+    "npsn": "60102015",
+    "type": "SMA",
+    "jenis": "Negeri",
+    "address": "Jl. Dr. Wem Tehupeiory, Hutumuri, Kec. Leitimur Sel., Kota Ambon, Maluku",
+    "kecamatan": "Leitimur Selatan",
+    "image": "https://sman8ambon.sch.id/storage/01-cms-website/sman8ambon.sch.id/slide/frsab1615988495.png",
+    "email": "smandelap8an@yahoo.com",
+    "website": "sman8ambon.sch.id",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5029.9927826948215!2d128.27842048038025!3d-3.6978306131367145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ceb0055be488b%3A0x4738ea3e844745b1!2sSMA%20NEGERI%208%20AMBON!5e0!3m2!1sid!2sid!4v1753236802759!5m2!1sid!2sid",
+    "routeLink": "",
+    "akreditasi": "A",
+    "jurusan": [],
+    "fasilitas": [ "10 Ruang Kelas", "2 Laboraturium", "1 Perpustakaan", "2 Sanitasi Siswa"],
+    "deskripsi": "SMAN 8 AMBON merupakan salah satu sekolah jenjang SMA berstatus Negeri yang berada di wilayah Kec. Lei Timur Selatan, Kota Ambon, Maluku. SMAN 8 AMBON didirikan pada tanggal 1 Januari 1970 dengan Nomor SK Pendirian yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 166 siswa ini dibimbing oleh 27 guru yang profesional di bidangnya."
+  },
+      {
+    "id": "sma-33",
+    "name": "SMAS PGRI 2 AMBON",
+    "npsn": "60102017",
+    "type": "SMA",
+    "jenis": "Swasta",
+    "address": "Jl. Dr. Wem Tehupeiory, Hutumuri, Kec. Leitimur Sel., Kota Ambon, Maluku",
+    "kecamatan": "Leitimur Selatan",
+    "image": "https://tse4.mm.bing.net/th/id/OIP.5-AwQhXIdVqnI8v3OaXY_AHaE7?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "email": "yayasanpgri2504@gmail.com",
+    "website": "www.smapgri2ambon.co.id",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.75921769882!2d128.2650344372962!3d-3.6423153496780656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6cedbb6f6c8fb3%3A0x7b945df42c9ea847!2sSMA%20PGRI%202%20Ambon!5e0!3m2!1sid!2sid!4v1753243796835!5m2!1sid!2sid",
+    "routeLink": "",
+    "akreditasi": "A",
+    "jurusan": [],
+    "fasilitas": [ "4 Ruang Kelas", "2 Laboraturium", "0 Perpustakaan", "1 Sanitasi Siswa"],
+    "deskripsi": "SMAS PGRI 2 AMBON merupakan salah satu sekolah jenjang SMA berstatus Swasta yang berada di wilayah Kec. Lei Timur Selatan, Kota Ambon, Maluku. SMAS PGRI 2 AMBON didirikan pada tanggal 25 April 1988 dengan Nomor SK Pendirian 46/I.17/R/88 yang berada dalam naungan Kementerian Pendidikan dan Kebudayaan. Dalam kegiatan pembelajaran, sekolah yang memiliki 29 siswa ini dibimbing oleh 15 guru yang profesional di bidangnya."
   }
 ]
